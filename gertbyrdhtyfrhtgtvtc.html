@@ -2508,25 +2508,19 @@
 
         .changelog-new,
         .extrabutton {
-            position: relative;
-            top: 0;
-            right: 250px;
             background: var(--sec-Dark-color);
-            border-radius: 0 12px 12px 0;
+            border-radius: 12px;
             border: 1px solid var(--Light-color);
             color: var(--Light-color);
             margin-top: 15px;
             text-align: center;
             overflow: hidden;
             box-shadow: none;
-            transition: .5s;
+            transition: 0.5s;
         }
 
-        .changelog-new:focus,
-        .extrabutton:focus,
         .changelog-new:hover,
         .extrabutton:hover {
-            right: 15px;
             box-shadow: 0 0 12px var(--Light-color);
         }
 
@@ -2553,6 +2547,7 @@
         }
 
         .full-changelog {
+            border-top: 1px solid var(--Light-color) !important;
             border-left: none !important;
             border-bottom: none !important;
             border-right: none !important;
