@@ -28,7 +28,7 @@
     <meta name="twitter:description"
         content="Multiplayer Arcade Space Shooter io Game! Shoot asteroids and enemies to collect crystals. Upgrade your ship before you get killed!">
     <meta name="twitter:image" content="https://starblast.io/static/img/starblast.png?2">
-    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Modraxis/images/main/SRV%202.0.png" />
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Modraxis/images/main/SRV%202.0%20ecp%20round.png" />
     <link rel="image_src" href="https://starblast.io/static/img/starblast.png?2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -2463,7 +2463,7 @@
 
         :root {
             --Light-color: #E92D34;
-            --Dark-color: hsl(355deg 89.66% 11.37%);
+            --Dark-color: #370307;
             --sec-Light-color: hsl(355deg 100% 48.04% / 50%);
             --sec-Dark-color: hsl(355deg 89.66% 11.37% / 50%);
             --Background-Dark-color: hsla(355, 100%, 5%, 0.25);
@@ -10752,14 +10752,8 @@
                         case "carbon":
                             this.buildCarbonMaterial();
                             break;
-                        case "s_ab1":
-                            this.buildAB1Material();
-                            break;
-                        case "s_ab2":
-                            this.buildAB2Material();
-                            break;
-                        case "s_ab3":
-                            this.buildAB3Material();
+                        case "srvM":
+                            this.buildsrvMaterial();
                             break;
                         case "Modraxis":
                             this.buildModraxisMaterial();
@@ -10788,40 +10782,16 @@
                             emissive: ll10I.hsvToRgbHex(this.hue, .5, 1),
                             emissiveMap: OOlI1
                         })
-                    }, t.prototype.buildAB1Material = function (t) {
+                    }, t.prototype.buildsrvMaterial = function (t) {
                         return this.material = new THREE.MeshPhongMaterial({
                             map: I0O01,
                             bumpMap: I0O01,
                             specularMap: I0O01,
-                            specular: 'hsl(180, 100%, 40%)',
+                            specular: 'hsl(355, 100%, 50%)',
                             shininess: 100,
                             bumpScale: .1,
-                            color: 'hsl(260, 100%, 60%)',
-                            emissive: 'hsl(180, 100%, 60%)',
-                            emissiveMap: OOlI1
-                        })
-                    }, t.prototype.buildAB2Material = function (t) {
-                        return this.material = new THREE.MeshPhongMaterial({
-                            map: I0O01,
-                            bumpMap: I0O01,
-                            specularMap: I0O01,
-                            specular: 'hsl(260, 100%, 50%)',
-                            shininess: 100,
-                            bumpScale: .1,
-                            color: 'hsl(260, 100%, 50%)',
-                            emissive: 'hsl(260, 100%, 50%)',
-                            emissiveMap: OOlI1
-                        })
-                    }, t.prototype.buildAB3Material = function (t) {
-                        return this.material = new THREE.MeshPhongMaterial({
-                            map: I0O01,
-                            bumpMap: I0O01,
-                            specularMap: I0O01,
-                            specular: 'hsl(180, 100%, 45%)',
-                            shininess: 100,
-                            bumpScale: .1,
-                            color: 'hsl(180, 100%, 25%)',
-                            emissive: 'hsl(180, 100%, 70%)',
+                            color: 'hsl(350, 100%, 20%)',
+                            emissive: 'hsl(350, 100%, 50%)',
                             emissiveMap: OOlI1
                         })
                     }, t.prototype.buildModraxisMaterial = function (t) { return this.material = new THREE.MeshPhongMaterial({ map: I0O01, bumpMap: I0O01, specularMap: I0O01, specular: 'hsl(200, 100%, 40%)', shininess: 80, bumpScale: .1, color: 'hsl(200, 100%, 15%)', emissive: 'hsl(200, 100%, 40%)', emissiveMap: OOlI1 }); }, t.prototype.buildAlloyMaterial = function () {
@@ -12844,14 +12814,8 @@
                         case "carbon":
                             this.buildCarbonMaterial();
                             break;
-                        case "s_ab1":
-                            this.buildAB1Material();
-                            break;
-                        case "s_ab2":
-                            this.buildAB2Material();
-                            break;
-                        case "s_ab3":
-                            this.buildAB3Material();
+                        case "srvM":
+                            this.buildsrvMaterial();
                             break;
                         case "Modraxis":
                             this.buildModraxisMaterial();
@@ -12885,40 +12849,16 @@
                         emissive: ll10I.hsvToRgbHex(this.hue, .5, 1),
                         emissiveMap: OOlI1
                     })
-                }, t.prototype.buildAB1Material = function (t) {
+                }, t.prototype.buildsrvMaterial = function (t) {
                     return this.material = new THREE.MeshPhongMaterial({
                         map: I0O01,
                         bumpMap: I0O01,
                         specularMap: I0O01,
-                        specular: 'hsl(180, 100%, 40%)',
+                        specular: 'hsl(355, 100%, 50%)',
                         shininess: 100,
                         bumpScale: .1,
-                        color: 'hsl(260, 100%, 60%)',
-                        emissive: 'hsl(180, 100%, 60%)',
-                        emissiveMap: OOlI1
-                    })
-                }, t.prototype.buildAB2Material = function (t) {
-                    return this.material = new THREE.MeshPhongMaterial({
-                        map: I0O01,
-                        bumpMap: I0O01,
-                        specularMap: I0O01,
-                        specular: 'hsl(260, 100%, 50%)',
-                        shininess: 100,
-                        bumpScale: .1,
-                        color: 'hsl(260, 100%, 50%)',
-                        emissive: 'hsl(260, 100%, 50%)',
-                        emissiveMap: OOlI1
-                    })
-                }, t.prototype.buildAB3Material = function (t) {
-                    return this.material = new THREE.MeshPhongMaterial({
-                        map: I0O01,
-                        bumpMap: I0O01,
-                        specularMap: I0O01,
-                        specular: 'hsl(180, 100%, 45%)',
-                        shininess: 100,
-                        bumpScale: .1,
-                        color: 'hsl(180, 100%, 25%)',
-                        emissive: 'hsl(180, 100%, 70%)',
+                        color: 'hsl(350, 100%, 20%)',
+                        emissive: 'hsl(350, 100%, 50%)',
                         emissiveMap: OOlI1
                     })
                 }, t.prototype.buildModraxisMaterial = function (t) { return this.material = new THREE.MeshPhongMaterial({ map: I0O01, bumpMap: I0O01, specularMap: I0O01, specular: 'hsl(200, 100%, 40%)', shininess: 80, bumpScale: .1, color: 'hsl(200, 100%, 15%)', emissive: 'hsl(200, 100%, 40%)', emissiveMap: OOlI1 }); }, t.prototype.buildTitaniumMaterial = function () {
@@ -19118,14 +19058,8 @@
                         case "gold":
                             s = t.createLinearGradient(0, 0, 0, i), s.addColorStop(0, "hsl(40,100%,50%)"), s.addColorStop(.5, "hsl(40,100%,80%)"), s.addColorStop(.5, "hsl(20,100%,30%)"), s.addColorStop(1, "hsl(40,100%,50%)");
                             break;
-                        case "s_ab1":
-                            s = t.createLinearGradient(0, 0, 0, i), s.addColorStop(0, "hsl(180,100%,50%)"), s.addColorStop(.5, "hsl(260,100%,80%)"), s.addColorStop(.5, "hsl(260,100%,30%)"), s.addColorStop(1, "hsl(260,100%,50%)");
-                            break;
-                        case "s_ab2":
-                            s = t.createLinearGradient(0, 0, 0, i), s.addColorStop(0, "hsl(260,100%,50%)"), s.addColorStop(.5, "hsl(260,100%,80%)"), s.addColorStop(.5, "hsl(260,100%,30%)"), s.addColorStop(1, "hsl(260,100%,50%)");
-                            break;
-                        case "s_ab3":
-                            s = t.createLinearGradient(0, 0, 0, i), s.addColorStop(0, "hsl(180,100%,50%)"), s.addColorStop(.5, "hsl(180,100%,50%)"), s.addColorStop(.5, "hsl(180,100%,30%)"), s.addColorStop(1, "hsl(180,100%,50%)");
+                        case "srvM":
+                            s = t.createLinearGradient(0, 0, 0, i), s.addColorStop(0, "hsl(350,100%,30%)"), s.addColorStop(.5, "hsl(350,100%,50%)"), s.addColorStop(.5, "hsl(350,100%,20%)"), s.addColorStop(1, "hsl(350,100%,30%)");
                             break;
                         case "Modraxis":
                             s = t.createLinearGradient(0, 0, 0, i), s.addColorStop(0, "hsl(200,100%,30%)"), s.addColorStop(.5, "hsl(200,100%,50%)"), s.addColorStop(.5, "hsl(200,100%,20%)"), s.addColorStop(1, "hsl(200,100%,30%)");
@@ -19156,8 +19090,8 @@
                 }, t.prototype.drawIcon = function (t, e, i) {
                     var s, l, n, a, o, r, h, u, d, I, c;
                     switch (this.icon) {
-                        case "ab":
-                            this.icon = "https://raw.githubusercontent.com/Modraxis/images/main/AB%20ecp.jpg";
+                        case "srv":
+                            this.icon = "https://raw.githubusercontent.com/Modraxis/images/main/SRV%202.0%20ecp%20round.png";
                             break;
                         case "gamepedia":
                             this.icon = "https://starblast.io/ecp/gamepedia.png";
@@ -19287,10 +19221,10 @@
                     }).toImage(), t.table[o] = a), t.table[o]
                 }, t.getRandomImage = function (e) {
                     var i, s, l;
-                    return i = ["ab", "star", "paw", "pirate", "reddit", "invader", "youtube"][Math.floor(6 * Math.random())], s = ["zinc", "gold", "alloy", "carbon", "s_ab1", "s_ab2", "s_ab3", "titanium"][Math.floor(5 * Math.random())], l = ["0", "1", "2", "3"][Math.floor(4 * Math.random())], t.IlOOI(i, l, s, e)
+                    return i = ["srv", "star", "paw", "pirate", "reddit", "invader", "youtube"][Math.floor(6 * Math.random())], s = ["zinc", "gold", "alloy", "carbon", "srvM", "titanium"][Math.floor(5 * Math.random())], l = ["0", "1", "2", "3"][Math.floor(4 * Math.random())], t.IlOOI(i, l, s, e)
                 }, t.test = function () {
                     var e, i, s, l, n, a, o, r, h, u, d, I;
-                    for (u = ["zinc", "gold", "alloy", "s_ab1", "s_ab2", "s_ab3", "carbon", "titanium"], s = 0, a = u.length; s < a; s++)
+                    for (u = ["zinc", "gold", "alloy", "srvM", "carbon", "titanium"], s = 0, a = u.length; s < a; s++)
                         for (e = u[s], d = ["star", "paw", "pirate", "reddit", "invader", "youtube"], l = 0, o = d.length; l < o; l++)
                             for (i = d[l], I = ["simple"], h = 0, r = I.length; h < r; h++) n = I[h], document.body.appendChild(new t(128, {
                                 badge: i,
@@ -19302,8 +19236,8 @@
                 function t(e) {
                     var i, s, l, n;
                     if (this.I0I1O = e, this.key = localStorage.getItem("ECPKey"), null != this.key && this.key.length > 11 && (this.key = this.key.substring(this.key.length - 11, this.key.length)), this.verified = localStorage.getItem("ECPVerified"), this.custom = {
-                        badge: localStorage.getItem("badge") || "ab",
-                        finish: localStorage.getItem("finish") || "s_ab1",
+                        badge: localStorage.getItem("badge") || "srv",
+                        finish: localStorage.getItem("finish") || "srvM",
                         laser: localStorage.getItem("laser") || "3"
                     }, "halloween" === this.custom.badge && (this.custom.badge = "seasonal", localStorage.setItem("badge", "seasonal")), "fullcolor" === this.custom.finish && (this.custom.finish = "alloy"), this.additional_badges = [], null != localStorage.getItem("additional_badges")) {
                         try {
@@ -19389,7 +19323,7 @@
                         gamepedia: "Gamepedia",
                         discord: "Discord",
                         medic: "Medic",
-                        ab: "Arab Empire",
+                        srv: "SRV 2.0",
                         blank: "Blank",
                         seasonal: "Seasonal"
                     },
@@ -19398,9 +19332,7 @@
                         alloy: "Alloy",
                         gold: "Gold",
                         titanium: "Titanium",
-                        s_ab1: "Dark Matter Silk",
-                        s_ab2: "Dark Matter Silk (Purple)",
-                        s_ab3: "Dark Matter Silk (Cyan)",
+                        srvM: "Radiant Ruby",
                         carbon: "Carbon"
                     },
                     laser: {
