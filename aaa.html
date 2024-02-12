@@ -52320,6 +52320,13 @@
                                     filter: "default,app,mobile"
                                 },
 
+                                RadZoo: {
+                                    name: "Radar Zoom",
+                                    value: 4,
+                                    default: false,
+                                    filter: "default,app,mobile"
+                                },
+
                                 antialias: {
                                     name: "Antialiasing",
                                     value: !0,
@@ -70445,8 +70452,8 @@
                 }),
                 (module.exports = translations);
         })();
-    </script>
-    <script>
+    // </script>
+    // <script>
         ChatPanel.prototype.getEmotesCapacity = function () {
             let globalVal = ChatPanel.toString().match(/[0OlI1]{5}/)[0];
             let num = this[globalVal].settings.get("emojis");
@@ -70463,6 +70470,27 @@
             ChatPanel.prototype.typed
                 .toString()
                 .replace(/>=\s*4/, " >= this.getEmotesCapacity()")
+        )();
+    </script>
+    <script>
+        // RadZoo
+        // ModdingMode
+        ModdingMode.prototype.RadZoo = function () {
+            let globalVal = ChatPanel.toString().match(/[0OlI1]{5}/)[0];
+            let num = this[globalVal].settings.get("RadZoo");
+            try {
+                return num == null || isNaN(num)
+                    ? 4
+                    : Math.trunc(Math.min(Math.max(1, num), 4)) || 1;
+            } catch (e) {
+                return 1;
+            }
+        };
+        ModdingMode.prototype.setOptions.radar_zoom = Function(
+            "return " +
+            ModdingMode.prototype.setOptions.radar_zoom
+                .toString()
+                .replace(/>=\s*4/, " >= this.RadZoo()")
         )();
     </script>
     <script>
