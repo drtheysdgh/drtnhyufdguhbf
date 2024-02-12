@@ -70438,33 +70438,30 @@
                 (module.exports = translations);
         })();
     </script>
-    // <script>
-    //     let globalVal = ChatPanel.toString().match(/[0OlI1]{5}/)[0];
-    //     ChatPanel.prototype.getEmotesCapacity = function () {
-    //         let num = this[globalVal].settings.get("emojis");
-    //         try {
-    //             return num == null || isNaN(num)
-    //                 ? 4
-    //                 : Math.trunc(Math.min(Math.max(1, num), 5)) || 4;
-    //         } catch (e) {
-    //             return 4;
-    //         }
-    //     };
-    //     ChatPanel.prototype.typed = Function(
-    //         "return " +
-    //         ChatPanel.prototype.typed
-    //             .toString()
-    //             .replace(/>=\s*4/, " >= this.getEmotesCapacity()")
-    //     )();
-    // </script>
     <script>
-
+        ChatPanel.prototype.getEmotesCapacity = function () {
+            let globalVal = ChatPanel.toString().match(/[0OlI1]{5}/)[0];
+            let num = this[globalVal].settings.get("emojis");
+            try {
+                return num == null || isNaN(num)
+                    ? 4
+                    : Math.trunc(Math.min(Math.max(1, num), 5)) || 4;
+            } catch (e) {
+                return 4;
+            }
+        };
+        ChatPanel.prototype.typed = Function(
+            "return " +
+            ChatPanel.prototype.typed
+                .toString()
+                .replace(/>=\s*4/, " >= this.getEmotesCapacity()")
+        )();
+    </script>
+    <script>
         let oldExplosion = Explosions.prototype.explode, oldBlast = Explosions.prototype.blast;
 
-        let globalVal = oldExplosion.toString().match(/this\.([0OlI1\.]+)\.settings\.check/)[1].split(".");
-
-
         Explosions.prototype.isEnabled = function () {
+            let globalVal = oldExplosion.toString().match(/this\.([0OlI1\.]+)\.settings\.check/)[1].split(".");
             let _this = this;
             for (let i of globalVal) _this = _this[i];
             return _this.settings.check("explosions")
