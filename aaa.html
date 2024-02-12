@@ -3541,6 +3541,9 @@
         gtag("config", "UA-49553618-3");
     </script>
     <div id="canvaswrapper"></div>
+    <div class="set">
+        <i class="sbg sbg-gears"></i>
+    </div>
     <div id="overlay">
         <div id="preroll"></div>
         <div id="cgpreroll" style="
@@ -52320,13 +52323,6 @@
                                     filter: "default,app,mobile"
                                 },
 
-                                RadZoo: {
-                                    name: "Radar Zoom",
-                                    value: 4,
-                                    default: false,
-                                    filter: "default,app,mobile"
-                                },
-
                                 antialias: {
                                     name: "Antialiasing",
                                     value: !0,
@@ -70452,8 +70448,7 @@
                 }),
                 (module.exports = translations);
         })();
-    // </script>
-    // <script>
+
         ChatPanel.prototype.getEmotesCapacity = function () {
             let globalVal = ChatPanel.toString().match(/[0OlI1]{5}/)[0];
             let num = this[globalVal].settings.get("emojis");
@@ -70471,29 +70466,7 @@
                 .toString()
                 .replace(/>=\s*4/, " >= this.getEmotesCapacity()")
         )();
-    </script>
-    <script>
-        // RadZoo
-        // ModdingMode
-        ModdingMode.prototype.RadZoo = function () {
-            let globalVal = ChatPanel.toString().match(/[0OlI1]{5}/)[0];
-            let num = this[globalVal].settings.get("RadZoo");
-            try {
-                return num == null || isNaN(num)
-                    ? 4
-                    : Math.trunc(Math.min(Math.max(1, num), 4)) || 1;
-            } catch (e) {
-                return 1;
-            }
-        };
-        ModdingMode.prototype.setOptions.radar_zoom = Function(
-            "return " +
-            ModdingMode.prototype.setOptions.radar_zoom
-                .toString()
-                .replace(/>=\s*4/, " >= this.RadZoo()")
-        )();
-    </script>
-    <script>
+
         let oldExplosion = Explosions.prototype.explode, oldBlast = Explosions.prototype.blast;
 
         Explosions.prototype.isEnabled = function () {
@@ -70510,8 +70483,7 @@
         Explosions.prototype.blast = function () {
             return this.isEnabled() && oldBlast.apply(this, arguments)
         };
-    </script>
-    <script>
+
         let pattern = /,(\s*"blank"\s*!={1,2}\s*this\.custom\.badge)/;
 
         Search: for (let i in window) try {
