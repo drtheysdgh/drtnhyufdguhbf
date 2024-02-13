@@ -2181,7 +2181,7 @@
             box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
             background: hsl(200, 50%, 45%);
             border-radius: 1.3px;
-            border: 0.2px solid #160101;
+            border: 0.2px solid #160701;
         }
 
         input[type="range"]::-webkit-slider-thumb {
@@ -2207,7 +2207,7 @@
             box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
             background: hsl(200, 50%, 45%);
             border-radius: 1.3px;
-            border: 0.2px solid #160101;
+            border: 0.2px solid #160701;
         }
 
         input[type="range"]::-moz-range-thumb {
@@ -2231,14 +2231,14 @@
 
         input[type="range"]::-ms-fill-lower {
             background: #456394;
-            border: 0.2px solid #160101;
+            border: 0.2px solid #160701;
             border-radius: 2.6px;
             box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
         }
 
         input[type="range"]::-ms-fill-upper {
             background: hsl(200, 50%, 45%);
-            border: 0.2px solid #160101;
+            border: 0.2px solid #160701;
             border-radius: 2.6px;
             box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
         }
@@ -5058,7 +5058,7 @@
                     );
                 }),
                 (hasProp = {}.hasOwnProperty),
-                (this.lO101 = (function (t) {
+                (this.lO701 = (function (t) {
                     function e(t) {
                         (this.text = t),
                             e.IlOlI.constructor.call(this),
@@ -5492,7 +5492,7 @@
                                 ((this.pressed = !0),
                                     (this.O1IOl = t),
                                     (this.ll01O = e),
-                                    (this.I0101 = this.llOI1),
+                                    (this.I0701 = this.llOI1),
                                     (this.lIO1l = this.OO010)),
                                 a = this.lOOIl(t, e),
                                 n = 0,
@@ -5514,7 +5514,7 @@
                                 return (
                                     (this.OOl1I = Math.max(
                                         0,
-                                        Math.min(this.lO1ll, this.I0101 + 1.5 * (this.O1IOl - t))
+                                        Math.min(this.lO1ll, this.I0701 + 1.5 * (this.O1IOl - t))
                                     )),
                                     (this.I0l0l = Math.max(
                                         0,
@@ -5543,7 +5543,7 @@
                                         s.l1l0I(t + this.llOI1, e + this.OO010, i))
                                     : (this.O01IO &&
                                         this.scrollTo(
-                                            this.I0101 + 1.5 * (this.O1IOl - t),
+                                            this.I0701 + 1.5 * (this.O1IOl - t),
                                             this.lIO1l + 1.5 * (this.ll01O - e)
                                         ),
                                         this.O01IO)
@@ -6730,7 +6730,7 @@
                         }),
                         (i.prototype.buttonPressed = function () {
                             return (
-                                this.IIO1I.I101l.O1OOO(this.type.code),
+                                this.IIO1I.I701l.O1OOO(this.type.code),
                                 (this.pressed = !1),
                                 this.IIO1I.sendGAEvent(
                                     "ship_evt",
@@ -6792,7 +6792,7 @@
                                 (function (t) {
                                     return function () {
                                         return (
-                                            t.IIO1I.I101l.buyLife(),
+                                            t.IIO1I.I701l.buyLife(),
                                             (t.life_button.pressed = !1),
                                             t.IIO1I.sendGAEvent("buylife_evt"),
                                             !0
@@ -7278,7 +7278,7 @@
                         }),
                         (i.prototype.buttonPressed = function () {
                             return (
-                                this.IIO1I.I101l.upgradeSpec(this.index),
+                                this.IIO1I.I701l.upgradeSpec(this.index),
                                 (this.pressed = !1),
                                 Math.random() < 0.1 &&
                                 this.IIO1I.sendGAEvent("upgrade_evt", this.ref),
@@ -10633,7 +10633,7 @@
                                     new ShipAd(this.IIO1I, this.IIO1I.ship_ad_code),
                                     [0, -0.1, 0.2, 0.4]
                                 ),
-                                (a = new lO101(t("NEW SHIP!"))),
+                                (a = new lO701(t("NEW SHIP!"))),
                                 this.add(a, [0.01, 0.175, 0.18, 0.025]),
                                 (a.background = null),
                                 (a.text_shadow = {
@@ -10641,7 +10641,7 @@
                                     blur: 30,
                                     color: "#8FF",
                                 }),
-                                (a = new lO101(o.name + " - " + t("Level") + " " + o.level)),
+                                (a = new lO701(o.name + " - " + t("Level") + " " + o.level)),
                                 this.add(a, [0.01, 0.2, 0.18, 0.025]),
                                 (a.background = null),
                                 (a.text_shadow = {
@@ -10909,7 +10909,7 @@
                                                 0,
                                                 Math.min(100, Math.round(100 * (1 - n)))
                                             )),
-                                            this.survival_info.set(this.IIO1I.I101l.alive_ships, s),
+                                            this.survival_info.set(this.IIO1I.I701l.alive_ships, s),
                                             this.radiation_com < 1 &&
                                             n > 0.02 &&
                                             ((this.radiation_com = 1),
@@ -11949,7 +11949,7 @@
                                 (this.shown || this.O0011(),
                                     (this.close_time = Date.now() + 6e3),
                                     (this.phrase += t),
-                                    this.IIO1I.I101l.say(this.phrase),
+                                    this.IIO1I.I701l.say(this.phrase),
                                     this.phrase.length >= 4 && this.hide(),
                                     Math.random() < 0.01)
                             )
@@ -12703,7 +12703,7 @@
                                 this.selected < this.IIO1I.weapons.weapons.length &&
                                 !this.IIO1I.OIO00.O0O10.status.guided &&
                                 this.IIO1I.weapons.weapons[this.selected].type.OIIlI &&
-                                this.IIO1I.I101l.IOI0I(
+                                this.IIO1I.I701l.IOI0I(
                                     this.selected,
                                     this.IIO1I.weapons.weapons[this.selected].code
                                 );
@@ -12906,18 +12906,18 @@
                             return this.shown ? this.hide() : this.O0011();
                         }),
                         (e.prototype.llI01 = function (t) {
-                            this.IIO1I.I101l.llI01(t.code);
+                            this.IIO1I.I701l.llI01(t.code);
                         }),
                         (e.prototype.removeWeapon = function (t) {
                             if (null != this.IIO1I.weapons.weapons[t])
-                                return this.IIO1I.I101l.removeWeapon(t);
+                                return this.IIO1I.I701l.removeWeapon(t);
                         }),
                         (e.prototype.setTransferring = function (t) {
                             return t
                                 ? this.IIO1I.OIO00.O0O10.status.OlIII > 0
-                                    ? this.IIO1I.I101l.startTransfer()
+                                    ? this.IIO1I.I701l.startTransfer()
                                     : void 0
-                                : this.IIO1I.I101l.endTransfer();
+                                : this.IIO1I.I701l.endTransfer();
                         }),
                         (e.prototype.gamepadNavigation = function (t) {
                             switch (t) {
@@ -13311,7 +13311,7 @@
                         (this.store = t),
                             (this.weapon = i),
                             e.IlOlI.constructor.call(this),
-                            (this.type = 101);
+                            (this.type = 701);
                     }
                     return (
                         extend(e, t),
@@ -13434,7 +13434,7 @@
                             i.IlOlI.constructor.call(this, {
                                 pressed: (function (t) {
                                     return function () {
-                                        return t.store.IIO1I.I101l.toggleHealing(), !0;
+                                        return t.store.IIO1I.I701l.toggleHealing(), !0;
                                     };
                                 })(this),
                             }),
@@ -18137,7 +18137,7 @@
                 }),
                 (deepspaceworker = "self.onmessage = " + workerfunk + ";"),
                 (deepspaceworker +=
-                    "var lI0IO = (function() {\n  function lI0IO() {}\n\n  lI0IO.OO0O0 = function(h, s, v, I1lI0) {\n    var b, f, g, i, p, q, r, t;\n    if (I1lI0 == null) {\n      I1lI0 = [];\n    }\n    i = Math.floor(h * 6);\n    f = h * 6 - i;\n    p = v * (1 - s);\n    q = v * (1 - f * s);\n    t = v * (1 - (1 - f) * s);\n    switch (i % 6) {\n      case 0:\n        r = v;\n        g = t;\n        b = p;\n        break;\n      case 1:\n        r = q;\n        g = v;\n        b = p;\n        break;\n      case 2:\n        r = p;\n        g = v;\n        b = t;\n        break;\n      case 3:\n        r = p;\n        g = q;\n        b = v;\n        break;\n      case 4:\n        r = t;\n        g = p;\n        b = v;\n        break;\n      case 5:\n        r = v;\n        g = p;\n        b = q;\n    }\n    I1lI0[0] = (r * 255) | 0;\n    I1lI0[1] = (g * 255) | 0;\n    I1lI0[2] = (b * 255) | 0;\n    return I1lI0;\n  };\n\n  lI0IO.hsvToRgbHex = function(h, s, v) {\n    var b, f, g, i, p, q, r, t;\n    i = Math.floor(h * 6);\n    f = h * 6 - i;\n    p = v * (1 - s);\n    q = v * (1 - f * s);\n    t = v * (1 - (1 - f) * s);\n    switch (i % 6) {\n      case 0:\n        r = v;\n        g = t;\n        b = p;\n        break;\n      case 1:\n        r = q;\n        g = v;\n        b = p;\n        break;\n      case 2:\n        r = p;\n        g = v;\n        b = t;\n        break;\n      case 3:\n        r = p;\n        g = q;\n        b = v;\n        break;\n      case 4:\n        r = t;\n        g = p;\n        b = v;\n        break;\n      case 5:\n        r = v;\n        g = p;\n        b = q;\n    }\n    return (((r * 255) | 0) << 16) | (((g * 255) | 0) << 8) | ((b * 255) | 0);\n  };\n\n  return lI0IO;\n\n})();\n\nvar III01 = (function() {\n  function III01(seed) {\n    this.seed = seed != null ? seed : Math.random();\n    if (this.seed < 1) {\n      this.seed *= 1 << 30;\n    }\n    this.a = 13971;\n    this.b = 12345;\n    this.size = 1 << 30;\n    this.I1II0 = this.size - 1;\n    this.OOl0O = 1 / this.size;\n    this.I1l10();\n    this.I1l10();\n    this.I1l10();\n  }\n\n  III01.prototype.next = function() {\n    this.seed = (this.seed * this.a + this.b) & this.I1II0;\n    return this.seed * this.OOl0O;\n  };\n\n  III01.prototype.I1OOl = function(lI000, pow) {\n    if (pow != null) {\n      return Math.floor(Math.pow(this.next(), pow) * lI000);\n    } else {\n      return Math.floor(this.next() * lI000);\n    }\n  };\n\n  III01.prototype.I1l10 = function() {\n    return this.seed = (this.seed * this.a + this.b) & this.I1II0;\n  };\n\n  III01.prototype.feed = function(number) {\n    return this.seed = (this.seed * this.a * number + this.b) & this.I1II0;\n  };\n\n  return III01;\n\n})();\n\nvar I1O00 = (function() {\n  function I1O00(OO1ll) {\n    var i, l, len, ref;\n    this.seed = OO1ll;\n    this.table = [670, 243, 963, 607, 432, 29, 624, 809, 254, 752, 691, 904, 275, 984, 586, 94, 1014, 614, 252, 178, 488, 954, 55, 836, 186, 858, 719, 562, 685, 898, 167, 844, 639, 505, 85, 386, 520, 988, 561, 889, 91, 329, 900, 847, 334, 531, 168, 57, 789, 529, 259, 323, 313, 72, 153, 606, 694, 442, 547, 922, 242, 983, 965, 876, 39, 728, 383, 109, 343, 810, 815, 144, 457, 434, 221, 279, 328, 136, 674, 556, 502, 896, 582, 250, 665, 370, 926, 912, 118, 543, 365, 467, 311, 700, 15, 297, 609, 731, 476, 634, 715, 777, 62, 1007, 525, 942, 310, 627, 630, 448, 437, 822, 300, 339, 924, 583, 92, 800, 698, 312, 542, 740, 271, 778, 895, 447, 175, 957, 17, 481, 347, 283, 366, 277, 843, 966, 927, 535, 503, 234, 746, 712, 1010, 544, 671, 295, 978, 729, 997, 287, 621, 782, 160, 433, 537, 121, 413, 304, 98, 657, 498, 946, 319, 595, 191, 341, 554, 523, 274, 209, 435, 644, 947, 979, 397, 261, 681, 786, 1006, 565, 472, 180, 318, 126, 874, 693, 526, 276, 340, 808, 884, 409, 486, 962, 960, 772, 901, 690, 359, 837, 129, 363, 509, 616, 88, 382, 730, 513, 623, 999, 504, 48, 4, 384, 281, 560, 417, 99, 773, 956, 943, 496, 558, 218, 170, 471, 536, 138, 19, 266, 6, 868, 845, 16, 985, 866, 601, 445, 458, 894, 950, 349, 1017, 125, 495, 723, 446, 647, 834, 880, 272, 475, 483, 227, 357, 750, 851, 139, 406, 336, 158, 284, 482, 324, 991, 632, 587, 663, 74, 256, 541, 120, 801, 831, 46, 522, 589, 1, 571, 368, 137, 761, 885, 968, 982, 948, 785, 391, 840, 932, 829, 117, 641, 466, 367, 688, 733, 229, 735, 14, 205, 31, 316, 333, 183, 521, 795, 58, 1021, 282, 794, 939, 40, 394, 793, 1002, 763, 212, 484, 133, 260, 465, 396, 769, 518, 955, 497, 377, 145, 508, 514, 224, 196, 454, 176, 975, 865, 1005, 1023, 986, 596, 426, 893, 551, 90, 130, 873, 22, 709, 686, 436, 236, 661, 579, 764, 362, 141, 112, 970, 987, 12, 317, 369, 26, 344, 66, 803, 493, 716, 9, 637, 945, 225, 703, 78, 346, 751, 123, 1009, 1016, 27, 52, 864, 902, 921, 292, 314, 599, 799, 263, 626, 338, 953, 491, 892, 353, 692, 917, 540, 882, 677, 744, 633, 821, 327, 60, 1020, 928, 788, 360, 414, 430, 462, 824, 820, 727, 398, 342, 273, 726, 981, 84, 82, 206, 388, 720, 806, 652, 550, 238, 159, 134, 732, 897, 500, 881, 805, 814, 701, 717, 566, 7, 211, 604, 816, 56, 658, 107, 61, 374, 320, 501, 13, 642, 863, 791, 438, 348, 97, 214, 86, 305, 875, 656, 24, 364, 767, 156, 879, 590, 734, 920, 655, 577, 83, 584, 660, 38, 100, 299, 580, 990, 636, 944, 463, 766, 996, 714, 8, 515, 87, 198, 280, 444, 131, 404, 108, 278, 487, 223, 598, 410, 395, 199, 268, 989, 75, 195, 760, 916, 977, 421, 11, 1000, 813, 216, 817, 823, 164, 668, 739, 572, 30, 707, 798, 291, 564, 77, 456, 478, 68, 643, 615, 172, 841, 672, 919, 1012, 613, 385, 980, 711, 771, 682, 232, 765, 143, 620, 631, 861, 468, 622, 201, 325, 424, 189, 608, 403, 775, 646, 673, 1013, 400, 859, 838, 345, 210, 860, 65, 63, 34, 755, 161, 479, 235, 783, 460, 826, 507, 854, 839, 666, 802, 441, 114, 443, 738, 770, 929, 857, 907, 741, 935, 949, 322, 995, 217, 667, 269, 184, 650, 1018, 506, 290, 787, 459, 721, 828, 567, 222, 494, 142, 743, 405, 76, 722, 588, 147, 899, 270, 695, 597, 337, 155, 569, 679, 853, 450, 21, 517, 197, 371, 257, 380, 244, 553, 952, 381, 827, 524, 877, 702, 306, 600, 1011, 431, 781, 594, 387, 1019, 411, 533, 659, 177, 725, 930, 933, 832, 41, 2, 687, 1008, 439, 307, 891, 871, 415, 651, 308, 298, 811, 0, 194, 592, 241, 918, 18, 973, 110, 654, 967, 490, 683, 914, 128, 992, 964, 122, 230, 149, 289, 392, 416, 852, 936, 262, 102, 938, 511, 255, 510, 165, 105, 419, 958, 294, 379, 49, 699, 330, 593, 539, 710, 106, 79, 440, 200, 704, 961, 326, 321, 759, 193, 890, 44, 549, 913, 776, 909, 552, 972, 132, 429, 748, 532, 115, 888, 635, 842, 649, 747, 807, 887, 856, 784, 148, 530, 116, 157, 372, 754, 28, 581, 67, 187, 202, 818, 181, 45, 959, 146, 124, 994, 872, 675, 706, 253, 247, 625, 570, 152, 423, 185, 361, 849, 971, 546, 412, 830, 1022, 188, 850, 140, 220, 451, 219, 768, 1015, 455, 780, 976, 449, 969, 848, 293, 249, 59, 390, 512, 538, 578, 906, 819, 862, 974, 33, 911, 135, 908, 248, 401, 951, 527, 169, 676, 640, 1003, 591, 103, 37, 285, 684, 104, 163, 753, 1004, 934, 645, 470, 774, 20, 489, 228, 461, 492, 469, 998, 296, 233, 869, 605, 315, 36, 5, 425, 878, 617, 886, 23, 355, 993, 93, 473, 555, 474, 464, 937, 925, 1001, 611, 35, 812, 174, 53, 286, 680, 267, 428, 335, 883, 653, 69, 718, 585, 749, 150, 408, 393, 915, 576, 664, 629, 756, 402, 638, 602, 245, 43, 545, 213, 303, 192, 70, 453, 910, 407, 742, 111, 548, 835, 452, 575, 903, 619, 376, 154, 302, 151, 804, 867, 574, 563, 239, 648, 179, 855, 378, 618, 264, 669, 427, 354, 399, 265, 50, 796, 166, 923, 825, 697, 534, 54, 173, 870, 792, 162, 713, 246, 89, 51, 350, 705, 251, 557, 237, 240, 736, 689, 203, 519, 73, 81, 628, 288, 331, 204, 528, 480, 389, 32, 418, 573, 757, 358, 215, 226, 42, 779, 231, 171, 190, 612, 301, 762, 708, 420, 846, 208, 485, 351, 790, 737, 10, 258, 309, 797, 127, 516, 559, 499, 352, 71, 758, 25, 568, 113, 3, 610, 101, 375, 96, 603, 745, 64, 80, 477, 332, 833, 940, 373, 905, 422, 182, 356, 941, 47, 119, 662, 931, 696, 95, 724, 678, 207];\n    len = this.table.length;\n    for (i = l = 0, ref = len - 1; 0 <= ref ? l <= ref : l >= ref; i = 0 <= ref ? ++l : --l) {\n      this.table.push(this.table[i]);\n    }\n    if (this.seed < 1) {\n      this.seed *= 1 << 30;\n    }\n    this.size = 1024;\n    this.normalize = 1 / 1023;\n    this.I1II0 = 1023;\n    this.lIlll = this.seed & this.I1II0;\n    this.Illl0 = (this.seed >> 10) & this.I1II0;\n    this.IlIll = (this.seed >> 20) & this.I1II0;\n    this.c2d = [];\n    this.O0IOI = Math.cos(.3);\n    this.ll0OO = Math.sin(.3);\n  }\n\n  I1O00.prototype.IOIIl = function(x, y, a) {\n    var c;\n    c = (-2 * a + 3) * a * a;\n    return x * (1 - c) + y * c;\n  };\n\n  I1O00.prototype.IIlIO = function(x, y, a) {\n    return x * (1 - a) + y * a;\n  };\n\n  I1O00.prototype.I1OII = function(x, y) {\n    var lII0O, IIOIO, OOIOI, v2, I0OI0, OOOOl, l0lOO, l110I;\n    l0lOO = Math.floor(x);\n    l110I = Math.floor(y);\n    lII0O = x - l0lOO;\n    IIOIO = y - l110I;\n    l0lOO = l0lOO & this.I1II0;\n    l110I = l110I & this.I1II0;\n    OOIOI = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + this.Illl0]]];\n    v2 = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + this.Illl0]]];\n    I0OI0 = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + 1 + this.Illl0]]];\n    OOOOl = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + 1 + this.Illl0]]];\n    return this.IOIIl(this.IOIIl(OOIOI, v2, lII0O), this.IOIIl(I0OI0, OOOOl, lII0O), IIOIO) * this.normalize;\n  };\n\n  I1O00.prototype.l101l = function(x, y, z) {\n    var lII0O, IIOIO, az, OOIOI, v2, I0OI0, OOOOl, Ol0Ol, OO101, IO101, IlOIl, O0I0I, ll11O, l0lOO, l110I, O11IO;\n    l0lOO = Math.floor(x);\n    l110I = Math.floor(y);\n    O11IO = Math.floor(z);\n    lII0O = x - l0lOO;\n    IIOIO = y - l110I;\n    az = z - O11IO;\n    l0lOO = l0lOO & this.I1II0;\n    l110I = l110I & this.I1II0;\n    O11IO = O11IO & this.I1II0;\n    OOIOI = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    v2 = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    I0OI0 = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    OOOOl = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    Ol0Ol = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    OO101 = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    IO101 = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    IlOIl = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    O0I0I = this.IOIIl(this.IOIIl(OOIOI, v2, lII0O), this.IOIIl(I0OI0, OOOOl, lII0O), IIOIO);\n    ll11O = this.IOIIl(this.IOIIl(Ol0Ol, OO101, lII0O), this.IOIIl(IO101, IlOIl, lII0O), IIOIO);\n    return this.IOIIl(O0I0I, ll11O, az) * this.normalize;\n  };\n\n  I1O00.prototype.O100O = function(x, y, z) {\n    var lII0O, IIOIO, az, OOIOI, v2, I0OI0, OOOOl, Ol0Ol, OO101, IO101, IlOIl, O0I0I, ll11O, l0lOO, l110I, O11IO;\n    l0lOO = Math.floor(x);\n    l110I = Math.floor(y);\n    O11IO = Math.floor(z);\n    lII0O = x - l0lOO;\n    IIOIO = y - l110I;\n    az = z - O11IO;\n    l0lOO = l0lOO & this.I1II0;\n    l110I = l110I & this.I1II0;\n    O11IO = O11IO & this.I1II0;\n    OOIOI = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    v2 = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    I0OI0 = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    OOOOl = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    Ol0Ol = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    OO101 = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    IO101 = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    IlOIl = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    O0I0I = this.IIlIO(this.IIlIO(OOIOI, v2, lII0O), this.IIlIO(I0OI0, OOOOl, lII0O), IIOIO);\n    ll11O = this.IIlIO(this.IIlIO(Ol0Ol, OO101, lII0O), this.IIlIO(IO101, IlOIl, lII0O), IIOIO);\n    return this.IIlIO(O0I0I, ll11O, az) * this.normalize;\n  };\n\n  I1O00.prototype.I0l01 = function(Illll, l1OOI, iz) {};\n\n  I1O00.prototype.I1Ol1 = function(x, y, OOl00, OI001, O0lOl, IOOO1, ts) {\n    var d, i, l, OOl0O, IIOII, IOOI0, ref, OO1I1;\n    if (OOl00 == null) {\n      OOl00 = 5;\n    }\n    if (OI001 == null) {\n      OI001 = .5;\n    }\n    if (O0lOl == null) {\n      O0lOl = 1.9;\n    }\n    if (IOOO1 == null) {\n      IOOO1 = this.O0IOI;\n    }\n    if (ts == null) {\n      ts = this.ll0OO;\n    }\n    OO1I1 = 0;\n    d = 1;\n    OOl0O = 0;\n    for (i = l = 1, ref = OOl00; l <= ref; i = l += 1) {\n      OO1I1 += this.I1OII(x, y) * d;\n      OOl0O += d;\n      d *= OI001;\n      IIOII = O0lOl * (x * IOOO1 + y * ts);\n      IOOI0 = O0lOl * (y * IOOO1 - x * ts);\n      x = IIOII;\n      y = IOOI0;\n    }\n    return OO1I1 / OOl0O;\n  };\n\n  I1O00.prototype.l001I = function(x, y, z, OOl00, OI001, O0lOl, IOOO1, ts) {\n    var d, i, l, OOl0O, IIOII, IOOI0, ref, OO1I1;\n    if (OOl00 == null) {\n      OOl00 = 5;\n    }\n    if (OI001 == null) {\n      OI001 = .5;\n    }\n    if (O0lOl == null) {\n      O0lOl = 1.9;\n    }\n    if (IOOO1 == null) {\n      IOOO1 = this.O0IOI;\n    }\n    if (ts == null) {\n      ts = this.ll0OO;\n    }\n    OO1I1 = 0;\n    d = 1;\n    OOl0O = 0;\n    for (i = l = 1, ref = OOl00; l <= ref; i = l += 1) {\n      OO1I1 += this.l101l(x, y, z) * d;\n      OOl0O += d;\n      d *= OI001;\n      IIOII = O0lOl * (x * IOOO1 + y * ts);\n      IOOI0 = O0lOl * (y * IOOO1 - x * ts);\n      x = IIOII;\n      y = IOOI0;\n      z = O0lOl * z;\n    }\n    return OO1I1 / OOl0O;\n  };\n\n  I1O00.prototype.lII01 = function(x, y, l0l00, OOl00, OI001, O0lOl, IOOO1, ts) {\n    var lII0O, IIOIO, Illll, l1OOI, OOIOI, v2, I0OI0, OOOOl;\n    if (OOl00 == null) {\n      OOl00 = 5;\n    }\n    if (OI001 == null) {\n      OI001 = .5;\n    }\n    if (O0lOl == null) {\n      O0lOl = 1.9;\n    }\n    if (IOOO1 == null) {\n      IOOO1 = this.O0IOI;\n    }\n    if (ts == null) {\n      ts = this.ll0OO;\n    }\n    Illll = Math.floor(x / l0l00);\n    l1OOI = Math.floor(y / l0l00);\n    lII0O = x / l0l00 - Illll;\n    IIOIO = y / l0l00 - l1OOI;\n    OOIOI = this.I1Ol1(lII0O * l0l00, IIOIO * l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    v2 = this.I1Ol1(lII0O * l0l00 + l0l00, IIOIO * l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    I0OI0 = this.I1Ol1(lII0O * l0l00, IIOIO * l0l00 + l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    OOOOl = this.I1Ol1(lII0O * l0l00 + l0l00, IIOIO * l0l00 + l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    return this.IOIIl(this.IOIIl(OOIOI, v2, 1 - lII0O), this.IOIIl(I0OI0, OOOOl, 1 - lII0O), 1 - IIOIO);\n  };\n\n  I1O00.prototype.turbulence2d = function(x, y, OOl00, OI001, O0lOl, IOOO1, ts) {\n    var d, i, l, OOl0O, IIOII, IOOI0, ref, OO1I1;\n    if (OOl00 == null) {\n      OOl00 = 5;\n    }\n    if (OI001 == null) {\n      OI001 = .5;\n    }\n    if (O0lOl == null) {\n      O0lOl = 1.9;\n    }\n    if (IOOO1 == null) {\n      IOOO1 = this.O0IOI;\n    }\n    if (ts == null) {\n      ts = this.ll0OO;\n    }\n    OO1I1 = 0;\n    d = 1;\n    OOl0O = 0;\n    for (i = l = 1, ref = OOl00; l <= ref; i = l += 1) {\n      OO1I1 += 2 * (.5 - Math.abs(.5 - this.I1OII(x, y))) * d;\n      OOl0O += d;\n      d *= OI001;\n      IIOII = O0lOl * (x * IOOO1 + y * ts);\n      IOOI0 = O0lOl * (y * IOOO1 - x * ts);\n      x = IIOII;\n      y = IOOI0;\n    }\n    return OO1I1 / OOl0O;\n  };\n\n  I1O00.prototype.periodicTurbulence2d = function(x, y, l0l00, OOl00, OI001, O0lOl, IOOO1, ts) {\n    var lII0O, IIOIO, Illll, l1OOI, OOIOI, v2, I0OI0, OOOOl;\n    if (OOl00 == null) {\n      OOl00 = 5;\n    }\n    if (OI001 == null) {\n      OI001 = .5;\n    }\n    if (O0lOl == null) {\n      O0lOl = 1.9;\n    }\n    if (IOOO1 == null) {\n      IOOO1 = this.O0IOI;\n    }\n    if (ts == null) {\n      ts = this.ll0OO;\n    }\n    Illll = Math.floor(x / l0l00);\n    l1OOI = Math.floor(y / l0l00);\n    lII0O = x / l0l00 - Illll;\n    IIOIO = y / l0l00 - l1OOI;\n    OOIOI = this.turbulence2d(lII0O * l0l00, IIOIO * l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    v2 = this.turbulence2d(lII0O * l0l00 + l0l00, IIOIO * l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    I0OI0 = this.turbulence2d(lII0O * l0l00, IIOIO * l0l00 + l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    OOOOl = this.turbulence2d(lII0O * l0l00 + l0l00, IIOIO * l0l00 + l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    return this.IOIIl(this.IOIIl(OOIOI, v2, 1 - lII0O), this.IOIIl(I0OI0, OOOOl, 1 - lII0O), 1 - IIOIO);\n  };\n\n  I1O00.prototype.O0I00 = function(x, y, OOl00, OI001, O0lOl, IOOO1, ts) {\n    var O10OO, d, i, l, OOl0O, IIOII, IOOI0, ref, OO1I1, v;\n    if (OOl00 == null) {\n      OOl00 = 5;\n    }\n    if (OI001 == null) {\n      OI001 = .5;\n    }\n    if (O0lOl == null) {\n      O0lOl = 1.9;\n    }\n    if (IOOO1 == null) {\n      IOOO1 = this.O0IOI;\n    }\n    if (ts == null) {\n      ts = this.ll0OO;\n    }\n    OO1I1 = 0;\n    O10OO = 1;\n    d = 1;\n    OOl0O = 0;\n    for (i = l = 1, ref = OOl00; l <= ref; i = l += 1) {\n      v = this.I1OII(x, y) * 2;\n      if (v > 1) {\n        v = 2 - v;\n      }\n      v = Math.pow(v, 2);\n      OO1I1 += O10OO * d * v;\n      O10OO = v;\n      OOl0O += d;\n      d *= OI001;\n      IIOII = O0lOl * (x * IOOO1 + y * ts);\n      IOOI0 = O0lOl * (y * IOOO1 - x * ts);\n      x = IIOII;\n      y = IOOI0;\n    }\n    return OO1I1 / OOl0O;\n  };\n\n  I1O00.prototype.I0IOO = function(x, y, z, OOl00, OI001, O0lOl, IOOO1, ts) {\n    var O10OO, d, i, l, ll0lI, OOl0O, IIOII, IOOI0, OI111, ref, OO1I1, v;\n    if (OOl00 == null) {\n      OOl00 = 5;\n    }\n    if (OI001 == null) {\n      OI001 = .5;\n    }\n    if (O0lOl == null) {\n      O0lOl = 1.9;\n    }\n    if (IOOO1 == null) {\n      IOOO1 = this.O0IOI;\n    }\n    if (ts == null) {\n      ts = this.ll0OO;\n    }\n    OO1I1 = 0;\n    O10OO = 1;\n    d = 1;\n    OOl0O = 0;\n    for (i = l = 1, ref = OOl00; l <= ref; i = l += 1) {\n      v = this.l101l(x, y, z) * 2;\n      if (v > 1) {\n        v = 2 - v;\n      }\n      v = Math.pow(v, 2);\n      OO1I1 += O10OO * d * v;\n      O10OO = v;\n      OOl0O += d;\n      d *= OI001;\n      IIOII = x * IOOO1 + y * ts;\n      IOOI0 = y * IOOO1 - x * ts;\n      ll0lI = IOOI0 * IOOO1 + z * ts;\n      OI111 = z * IOOO1 - IOOI0 * ts;\n      x = O0lOl * IIOII;\n      y = O0lOl * ll0lI;\n      z = O0lOl * OI111;\n    }\n    return OO1I1 / OOl0O;\n  };\n\n  I1O00.prototype.l1lOI = function(x, y, l0l00) {\n    var lII0O, IIOIO, Ol1Il, l00I1, OlI01, OOlOO, I1l1O, O1O11, d, d1, d2, I1llO, OOIIO, O0l1l, II1l1, Ol0l0, O010l, i, j, l, m, px, lOlII, l0lOO, Ol010, l110I, O00l0;\n    l0lOO = Math.floor(x);\n    l110I = Math.floor(y);\n    lII0O = x - l0lOO;\n    IIOIO = y - l110I;\n    Ol1Il = 100;\n    l00I1 = 0;\n    OlI01 = 0;\n    OOlOO = 100;\n    I1l1O = 0;\n    O1O11 = 0;\n    for (i = l = 0; l <= 2; i = l += 1) {\n      for (j = m = 0; m <= 2; j = m += 1) {\n        Ol010 = (l0lOO - 1 + i) % l0l00;\n        O00l0 = (l110I - 1 + j) % l0l00;\n        px = -1 + i + this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + O00l0]]] * this.normalize * .8 + .1;\n        lOlII = -1 + j + this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + this.table[O00l0 + 1]]]] * this.normalize * .8 + .1;\n        I1llO = lII0O - px;\n        II1l1 = IIOIO - lOlII;\n        d = I1llO * I1llO + II1l1 * II1l1;\n        if (d < Ol1Il) {\n          OOlOO = Ol1Il;\n          I1l1O = l00I1;\n          O1O11 = OlI01;\n          Ol1Il = d;\n          l00I1 = px;\n          OlI01 = lOlII;\n        } else if (d < OOlOO) {\n          OOlOO = d;\n          I1l1O = px;\n          O1O11 = lOlII;\n        }\n      }\n    }\n    OOIIO = lII0O - l00I1;\n    Ol0l0 = IIOIO - OlI01;\n    d1 = Math.sqrt(OOIIO * OOIIO + Ol0l0 * Ol0l0);\n    O0l1l = lII0O - I1l1O;\n    O010l = IIOIO - O1O11;\n    d2 = Math.sqrt(O0l1l * O0l1l + O010l * O010l);\n    return Math.min(d1, d2) / Math.max(d1, d2);\n  };\n\n  I1O00.prototype.O1llO = function(x, y, l0l00) {\n    var lII0O, IIOIO, Ol1Il, l00I1, OlI01, O1011, d, I1llO, II1l1, i, j, l, m, px, lOlII, seed, l0lOO, Ol010, l110I, O00l0;\n    l0lOO = Math.floor(x);\n    l110I = Math.floor(y);\n    lII0O = x - l0lOO;\n    IIOIO = y - l110I;\n    Ol1Il = 100;\n    l00I1 = 0;\n    OlI01 = 0;\n    O1011 = 0;\n    for (i = l = 0; l <= 2; i = l += 1) {\n      for (j = m = 0; m <= 2; j = m += 1) {\n        Ol010 = (l0lOO - 1 + i) % l0l00;\n        O00l0 = (l110I - 1 + j) % l0l00;\n        px = -1 + i + this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + O00l0]]] * this.normalize * .8 + .1;\n        lOlII = -1 + j + this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + this.table[O00l0 + 1]]]] * this.normalize * .8 + .1;\n        seed = this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + this.table[O00l0 + 17]]]];\n        I1llO = lII0O - px;\n        II1l1 = IIOIO - lOlII;\n        d = I1llO * I1llO + II1l1 * II1l1;\n        if (d < Ol1Il) {\n          Ol1Il = d;\n          l00I1 = px;\n          OlI01 = lOlII;\n          O1011 = seed;\n        }\n      }\n    }\n    return O1011 * this.normalize;\n  };\n\n  I1O00.prototype.l1ll1 = function(x, y, z, l0l00) {\n    var lII0O, IIOIO, az, Ol1Il, l00I1, OlI01, IIOll, OOlOO, I1l1O, O1O11, Il010, d, d1, d2, I1llO, OOIIO, O0l1l, II1l1, Ol0l0, O010l, IlIII, lIIIl, IOOl1, i, j, k, l, m, n, px, lOlII, IOIl0, l0lOO, Ol010, l110I, O00l0, O11IO, lO0O1;\n    if (l0l00 == null) {\n      l0l00 = 100;\n    }\n    l0lOO = Math.floor(x);\n    l110I = Math.floor(y);\n    O11IO = Math.floor(z);\n    lII0O = x - l0lOO;\n    IIOIO = y - l110I;\n    az = z - O11IO;\n    Ol1Il = 100;\n    l00I1 = 0;\n    OlI01 = 0;\n    IIOll = 0;\n    OOlOO = 100;\n    I1l1O = 0;\n    O1O11 = 0;\n    Il010 = 0;\n    for (i = l = 0; l <= 2; i = l += 1) {\n      for (j = m = 0; m <= 2; j = m += 1) {\n        for (k = n = 0; n <= 2; k = n += 1) {\n          Ol010 = ((l0lOO - 1 + i) % l0l00) & this.I1II0;\n          O00l0 = ((l110I - 1 + j) % l0l00) & this.I1II0;\n          lO0O1 = ((O11IO - 1 + k) % l0l00) & this.I1II0;\n          px = -1 + i + this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + this.table[lO0O1 + O00l0]]]] * this.normalize;\n          lOlII = -1 + j + this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + this.table[this.table[O00l0 + lO0O1] + 1]]]] * this.normalize;\n          IOIl0 = -1 + k + this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + this.table[this.table[O00l0 + lO0O1] + 37]]]] * this.normalize;\n        }\n        I1llO = lII0O - px;\n        II1l1 = IIOIO - lOlII;\n        IlIII = az - IOIl0;\n        d = I1llO * I1llO + II1l1 * II1l1 + IlIII * IlIII;\n        if (d < Ol1Il) {\n          OOlOO = Ol1Il;\n          I1l1O = l00I1;\n          O1O11 = OlI01;\n          Il010 = IIOll;\n          Ol1Il = d;\n          l00I1 = px;\n          OlI01 = lOlII;\n          IIOll = IOIl0;\n        } else if (d < OOlOO) {\n          OOlOO = d;\n          I1l1O = px;\n          O1O11 = lOlII;\n          Il010 = IOIl0;\n        }\n      }\n    }\n    OOIIO = lII0O - l00I1;\n    Ol0l0 = IIOIO - OlI01;\n    lIIIl = az - IIOll;\n    d1 = Math.sqrt(OOIIO * OOIIO + Ol0l0 * Ol0l0 + lIIIl * lIIIl);\n    O0l1l = lII0O - I1l1O;\n    O010l = IIOIO - O1O11;\n    IOOl1 = az - Il010;\n    d2 = Math.sqrt(O0l1l * O0l1l + O010l * O010l + IOOl1 * IOOl1);\n    return Math.min(d1, d2) / Math.max(d1, d2);\n  };\n\n  I1O00.II010 = function(size) {\n    var i, index, l, ref, t, v;\n    t = [];\n    for (i = l = 0, ref = size - 1; 0 <= ref ? l <= ref : l >= ref; i = 0 <= ref ? ++l : --l) {\n      t[i] = i;\n    }\n    v = [];\n    while (true) {\n      if (t.length === 0) {\n        break;\n      }\n      index = Math.floor(Math.random() * t.length);\n      v.push(t.splice(index, 1)[0]);\n    }\n    return v;\n  };\n\n  return I1O00;\n\n})();"),
+                    "var lI0IO = (function() {\n  function lI0IO() {}\n\n  lI0IO.OO0O0 = function(h, s, v, I1lI0) {\n    var b, f, g, i, p, q, r, t;\n    if (I1lI0 == null) {\n      I1lI0 = [];\n    }\n    i = Math.floor(h * 6);\n    f = h * 6 - i;\n    p = v * (1 - s);\n    q = v * (1 - f * s);\n    t = v * (1 - (1 - f) * s);\n    switch (i % 6) {\n      case 0:\n        r = v;\n        g = t;\n        b = p;\n        break;\n      case 1:\n        r = q;\n        g = v;\n        b = p;\n        break;\n      case 2:\n        r = p;\n        g = v;\n        b = t;\n        break;\n      case 3:\n        r = p;\n        g = q;\n        b = v;\n        break;\n      case 4:\n        r = t;\n        g = p;\n        b = v;\n        break;\n      case 5:\n        r = v;\n        g = p;\n        b = q;\n    }\n    I1lI0[0] = (r * 255) | 0;\n    I1lI0[1] = (g * 255) | 0;\n    I1lI0[2] = (b * 255) | 0;\n    return I1lI0;\n  };\n\n  lI0IO.hsvToRgbHex = function(h, s, v) {\n    var b, f, g, i, p, q, r, t;\n    i = Math.floor(h * 6);\n    f = h * 6 - i;\n    p = v * (1 - s);\n    q = v * (1 - f * s);\n    t = v * (1 - (1 - f) * s);\n    switch (i % 6) {\n      case 0:\n        r = v;\n        g = t;\n        b = p;\n        break;\n      case 1:\n        r = q;\n        g = v;\n        b = p;\n        break;\n      case 2:\n        r = p;\n        g = v;\n        b = t;\n        break;\n      case 3:\n        r = p;\n        g = q;\n        b = v;\n        break;\n      case 4:\n        r = t;\n        g = p;\n        b = v;\n        break;\n      case 5:\n        r = v;\n        g = p;\n        b = q;\n    }\n    return (((r * 255) | 0) << 16) | (((g * 255) | 0) << 8) | ((b * 255) | 0);\n  };\n\n  return lI0IO;\n\n})();\n\nvar III01 = (function() {\n  function III01(seed) {\n    this.seed = seed != null ? seed : Math.random();\n    if (this.seed < 1) {\n      this.seed *= 1 << 30;\n    }\n    this.a = 13971;\n    this.b = 12345;\n    this.size = 1 << 30;\n    this.I1II0 = this.size - 1;\n    this.OOl0O = 1 / this.size;\n    this.I1l10();\n    this.I1l10();\n    this.I1l10();\n  }\n\n  III01.prototype.next = function() {\n    this.seed = (this.seed * this.a + this.b) & this.I1II0;\n    return this.seed * this.OOl0O;\n  };\n\n  III01.prototype.I1OOl = function(lI000, pow) {\n    if (pow != null) {\n      return Math.floor(Math.pow(this.next(), pow) * lI000);\n    } else {\n      return Math.floor(this.next() * lI000);\n    }\n  };\n\n  III01.prototype.I1l10 = function() {\n    return this.seed = (this.seed * this.a + this.b) & this.I1II0;\n  };\n\n  III01.prototype.feed = function(number) {\n    return this.seed = (this.seed * this.a * number + this.b) & this.I1II0;\n  };\n\n  return III01;\n\n})();\n\nvar I1O00 = (function() {\n  function I1O00(OO1ll) {\n    var i, l, len, ref;\n    this.seed = OO1ll;\n    this.table = [670, 243, 963, 607, 432, 29, 624, 809, 254, 752, 691, 904, 275, 984, 586, 94, 7014, 614, 252, 178, 488, 954, 55, 836, 186, 858, 719, 562, 685, 898, 167, 844, 639, 505, 85, 386, 520, 988, 561, 889, 91, 329, 900, 847, 334, 531, 168, 57, 789, 529, 259, 323, 313, 72, 153, 606, 694, 442, 547, 922, 242, 983, 965, 876, 39, 728, 383, 109, 343, 810, 815, 144, 457, 434, 221, 279, 328, 136, 674, 556, 502, 896, 582, 250, 665, 370, 926, 912, 118, 543, 365, 467, 311, 700, 15, 297, 609, 731, 476, 634, 715, 777, 62, 1007, 525, 942, 310, 627, 630, 448, 437, 822, 300, 339, 924, 583, 92, 800, 698, 312, 542, 740, 271, 778, 895, 447, 175, 957, 17, 481, 347, 283, 366, 277, 843, 966, 927, 535, 503, 234, 746, 712, 7010, 544, 671, 295, 978, 729, 997, 287, 621, 782, 160, 433, 537, 121, 413, 304, 98, 657, 498, 946, 319, 595, 191, 341, 554, 523, 274, 209, 435, 644, 947, 979, 397, 261, 681, 786, 1006, 565, 472, 180, 318, 126, 874, 693, 526, 276, 340, 808, 884, 409, 486, 962, 960, 772, 901, 690, 359, 837, 129, 363, 509, 616, 88, 382, 730, 513, 623, 999, 504, 48, 4, 384, 281, 560, 417, 99, 773, 956, 943, 496, 558, 218, 170, 471, 536, 138, 19, 266, 6, 868, 845, 16, 985, 866, 601, 445, 458, 894, 950, 349, 7017, 125, 495, 723, 446, 647, 834, 880, 272, 475, 483, 227, 357, 750, 851, 139, 406, 336, 158, 284, 482, 324, 991, 632, 587, 663, 74, 256, 541, 120, 801, 831, 46, 522, 589, 1, 571, 368, 137, 761, 885, 968, 982, 948, 785, 391, 840, 932, 829, 117, 641, 466, 367, 688, 733, 229, 735, 14, 205, 31, 316, 333, 183, 521, 795, 58, 1021, 282, 794, 939, 40, 394, 793, 1002, 763, 212, 484, 133, 260, 465, 396, 769, 518, 955, 497, 377, 145, 508, 514, 224, 196, 454, 176, 975, 865, 1005, 1023, 986, 596, 426, 893, 551, 90, 130, 873, 22, 709, 686, 436, 236, 661, 579, 764, 362, 141, 112, 970, 987, 12, 317, 369, 26, 344, 66, 803, 493, 716, 9, 637, 945, 225, 703, 78, 346, 751, 123, 1009, 7016, 27, 52, 864, 902, 921, 292, 314, 599, 799, 263, 626, 338, 953, 491, 892, 353, 692, 917, 540, 882, 677, 744, 633, 821, 327, 60, 1020, 928, 788, 360, 414, 430, 462, 824, 820, 727, 398, 342, 273, 726, 981, 84, 82, 206, 388, 720, 806, 652, 550, 238, 159, 134, 732, 897, 500, 881, 805, 814, 701, 717, 566, 7, 211, 604, 816, 56, 658, 107, 61, 374, 320, 501, 13, 642, 863, 791, 438, 348, 97, 214, 86, 305, 875, 656, 24, 364, 767, 156, 879, 590, 734, 920, 655, 577, 83, 584, 660, 38, 100, 299, 580, 990, 636, 944, 463, 766, 996, 714, 8, 515, 87, 198, 280, 444, 131, 404, 108, 278, 487, 223, 598, 410, 395, 199, 268, 989, 75, 195, 760, 916, 977, 421, 11, 1000, 813, 216, 817, 823, 164, 668, 739, 572, 30, 707, 798, 291, 564, 77, 456, 478, 68, 643, 615, 172, 841, 672, 919, 7012, 613, 385, 980, 711, 771, 682, 232, 765, 143, 620, 631, 861, 468, 622, 201, 325, 424, 189, 608, 403, 775, 646, 673, 7013, 400, 859, 838, 345, 210, 860, 65, 63, 34, 755, 161, 479, 235, 783, 460, 826, 507, 854, 839, 666, 802, 441, 114, 443, 738, 770, 929, 857, 907, 741, 935, 949, 322, 995, 217, 667, 269, 184, 650, 7018, 506, 290, 787, 459, 721, 828, 567, 222, 494, 142, 743, 405, 76, 722, 588, 147, 899, 270, 695, 597, 337, 155, 569, 679, 853, 450, 21, 517, 197, 371, 257, 380, 244, 553, 952, 381, 827, 524, 877, 702, 306, 600, 7011, 431, 781, 594, 387, 7019, 411, 533, 659, 177, 725, 930, 933, 832, 41, 2, 687, 1008, 439, 307, 891, 871, 415, 651, 308, 298, 811, 0, 194, 592, 241, 918, 18, 973, 110, 654, 967, 490, 683, 914, 128, 992, 964, 122, 230, 149, 289, 392, 416, 852, 936, 262, 102, 938, 511, 255, 510, 165, 105, 419, 958, 294, 379, 49, 699, 330, 593, 539, 710, 106, 79, 440, 200, 704, 961, 326, 321, 759, 193, 890, 44, 549, 913, 776, 909, 552, 972, 132, 429, 748, 532, 115, 888, 635, 842, 649, 747, 807, 887, 856, 784, 148, 530, 116, 157, 372, 754, 28, 581, 67, 187, 202, 818, 181, 45, 959, 146, 124, 994, 872, 675, 706, 253, 247, 625, 570, 152, 423, 185, 361, 849, 971, 546, 412, 830, 1022, 188, 850, 140, 220, 451, 219, 768, 7015, 455, 780, 976, 449, 969, 848, 293, 249, 59, 390, 512, 538, 578, 906, 819, 862, 974, 33, 911, 135, 908, 248, 401, 951, 527, 169, 676, 640, 1003, 591, 103, 37, 285, 684, 104, 163, 753, 1004, 934, 645, 470, 774, 20, 489, 228, 461, 492, 469, 998, 296, 233, 869, 605, 315, 36, 5, 425, 878, 617, 886, 23, 355, 993, 93, 473, 555, 474, 464, 937, 925, 1001, 611, 35, 812, 174, 53, 286, 680, 267, 428, 335, 883, 653, 69, 718, 585, 749, 150, 408, 393, 915, 576, 664, 629, 756, 402, 638, 602, 245, 43, 545, 213, 303, 192, 70, 453, 910, 407, 742, 111, 548, 835, 452, 575, 903, 619, 376, 154, 302, 151, 804, 867, 574, 563, 239, 648, 179, 855, 378, 618, 264, 669, 427, 354, 399, 265, 50, 796, 166, 923, 825, 697, 534, 54, 173, 870, 792, 162, 713, 246, 89, 51, 350, 705, 251, 557, 237, 240, 736, 689, 203, 519, 73, 81, 628, 288, 331, 204, 528, 480, 389, 32, 418, 573, 757, 358, 215, 226, 42, 779, 231, 171, 190, 612, 301, 762, 708, 420, 846, 208, 485, 351, 790, 737, 10, 258, 309, 797, 127, 516, 559, 499, 352, 71, 758, 25, 568, 113, 3, 610, 701, 375, 96, 603, 745, 64, 80, 477, 332, 833, 940, 373, 905, 422, 182, 356, 941, 47, 119, 662, 931, 696, 95, 724, 678, 207];\n    len = this.table.length;\n    for (i = l = 0, ref = len - 1; 0 <= ref ? l <= ref : l >= ref; i = 0 <= ref ? ++l : --l) {\n      this.table.push(this.table[i]);\n    }\n    if (this.seed < 1) {\n      this.seed *= 1 << 30;\n    }\n    this.size = 1024;\n    this.normalize = 1 / 1023;\n    this.I1II0 = 1023;\n    this.lIlll = this.seed & this.I1II0;\n    this.Illl0 = (this.seed >> 10) & this.I1II0;\n    this.IlIll = (this.seed >> 20) & this.I1II0;\n    this.c2d = [];\n    this.O0IOI = Math.cos(.3);\n    this.ll0OO = Math.sin(.3);\n  }\n\n  I1O00.prototype.IOIIl = function(x, y, a) {\n    var c;\n    c = (-2 * a + 3) * a * a;\n    return x * (1 - c) + y * c;\n  };\n\n  I1O00.prototype.IIlIO = function(x, y, a) {\n    return x * (1 - a) + y * a;\n  };\n\n  I1O00.prototype.I1OII = function(x, y) {\n    var lII0O, IIOIO, OOIOI, v2, I0OI0, OOOOl, l0lOO, l110I;\n    l0lOO = Math.floor(x);\n    l110I = Math.floor(y);\n    lII0O = x - l0lOO;\n    IIOIO = y - l110I;\n    l0lOO = l0lOO & this.I1II0;\n    l110I = l110I & this.I1II0;\n    OOIOI = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + this.Illl0]]];\n    v2 = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + this.Illl0]]];\n    I0OI0 = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + 1 + this.Illl0]]];\n    OOOOl = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + 1 + this.Illl0]]];\n    return this.IOIIl(this.IOIIl(OOIOI, v2, lII0O), this.IOIIl(I0OI0, OOOOl, lII0O), IIOIO) * this.normalize;\n  };\n\n  I1O00.prototype.l701l = function(x, y, z) {\n    var lII0O, IIOIO, az, OOIOI, v2, I0OI0, OOOOl, Ol0Ol, OO701, IO701, IlOIl, O0I0I, ll11O, l0lOO, l110I, O11IO;\n    l0lOO = Math.floor(x);\n    l110I = Math.floor(y);\n    O11IO = Math.floor(z);\n    lII0O = x - l0lOO;\n    IIOIO = y - l110I;\n    az = z - O11IO;\n    l0lOO = l0lOO & this.I1II0;\n    l110I = l110I & this.I1II0;\n    O11IO = O11IO & this.I1II0;\n    OOIOI = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    v2 = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    I0OI0 = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    OOOOl = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    Ol0Ol = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    OO701 = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    IO701 = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    IlOIl = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    O0I0I = this.IOIIl(this.IOIIl(OOIOI, v2, lII0O), this.IOIIl(I0OI0, OOOOl, lII0O), IIOIO);\n    ll11O = this.IOIIl(this.IOIIl(Ol0Ol, OO701, lII0O), this.IOIIl(IO701, IlOIl, lII0O), IIOIO);\n    return this.IOIIl(O0I0I, ll11O, az) * this.normalize;\n  };\n\n  I1O00.prototype.O100O = function(x, y, z) {\n    var lII0O, IIOIO, az, OOIOI, v2, I0OI0, OOOOl, Ol0Ol, OO701, IO701, IlOIl, O0I0I, ll11O, l0lOO, l110I, O11IO;\n    l0lOO = Math.floor(x);\n    l110I = Math.floor(y);\n    O11IO = Math.floor(z);\n    lII0O = x - l0lOO;\n    IIOIO = y - l110I;\n    az = z - O11IO;\n    l0lOO = l0lOO & this.I1II0;\n    l110I = l110I & this.I1II0;\n    O11IO = O11IO & this.I1II0;\n    OOIOI = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    v2 = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    I0OI0 = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    OOOOl = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    Ol0Ol = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    OO701 = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    IO701 = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    IlOIl = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    O0I0I = this.IIlIO(this.IIlIO(OOIOI, v2, lII0O), this.IIlIO(I0OI0, OOOOl, lII0O), IIOIO);\n    ll11O = this.IIlIO(this.IIlIO(Ol0Ol, OO701, lII0O), this.IIlIO(IO701, IlOIl, lII0O), IIOIO);\n    return this.IIlIO(O0I0I, ll11O, az) * this.normalize;\n  };\n\n  I1O00.prototype.I0l01 = function(Illll, l1OOI, iz) {};\n\n  I1O00.prototype.I1Ol1 = function(x, y, OOl00, OI001, O0lOl, IOOO1, ts) {\n    var d, i, l, OOl0O, IIOII, IOOI0, ref, OO1I1;\n    if (OOl00 == null) {\n      OOl00 = 5;\n    }\n    if (OI001 == null) {\n      OI001 = .5;\n    }\n    if (O0lOl == null) {\n      O0lOl = 1.9;\n    }\n    if (IOOO1 == null) {\n      IOOO1 = this.O0IOI;\n    }\n    if (ts == null) {\n      ts = this.ll0OO;\n    }\n    OO1I1 = 0;\n    d = 1;\n    OOl0O = 0;\n    for (i = l = 1, ref = OOl00; l <= ref; i = l += 1) {\n      OO1I1 += this.I1OII(x, y) * d;\n      OOl0O += d;\n      d *= OI001;\n      IIOII = O0lOl * (x * IOOO1 + y * ts);\n      IOOI0 = O0lOl * (y * IOOO1 - x * ts);\n      x = IIOII;\n      y = IOOI0;\n    }\n    return OO1I1 / OOl0O;\n  };\n\n  I1O00.prototype.l001I = function(x, y, z, OOl00, OI001, O0lOl, IOOO1, ts) {\n    var d, i, l, OOl0O, IIOII, IOOI0, ref, OO1I1;\n    if (OOl00 == null) {\n      OOl00 = 5;\n    }\n    if (OI001 == null) {\n      OI001 = .5;\n    }\n    if (O0lOl == null) {\n      O0lOl = 1.9;\n    }\n    if (IOOO1 == null) {\n      IOOO1 = this.O0IOI;\n    }\n    if (ts == null) {\n      ts = this.ll0OO;\n    }\n    OO1I1 = 0;\n    d = 1;\n    OOl0O = 0;\n    for (i = l = 1, ref = OOl00; l <= ref; i = l += 1) {\n      OO1I1 += this.l701l(x, y, z) * d;\n      OOl0O += d;\n      d *= OI001;\n      IIOII = O0lOl * (x * IOOO1 + y * ts);\n      IOOI0 = O0lOl * (y * IOOO1 - x * ts);\n      x = IIOII;\n      y = IOOI0;\n      z = O0lOl * z;\n    }\n    return OO1I1 / OOl0O;\n  };\n\n  I1O00.prototype.lII01 = function(x, y, l0l00, OOl00, OI001, O0lOl, IOOO1, ts) {\n    var lII0O, IIOIO, Illll, l1OOI, OOIOI, v2, I0OI0, OOOOl;\n    if (OOl00 == null) {\n      OOl00 = 5;\n    }\n    if (OI001 == null) {\n      OI001 = .5;\n    }\n    if (O0lOl == null) {\n      O0lOl = 1.9;\n    }\n    if (IOOO1 == null) {\n      IOOO1 = this.O0IOI;\n    }\n    if (ts == null) {\n      ts = this.ll0OO;\n    }\n    Illll = Math.floor(x / l0l00);\n    l1OOI = Math.floor(y / l0l00);\n    lII0O = x / l0l00 - Illll;\n    IIOIO = y / l0l00 - l1OOI;\n    OOIOI = this.I1Ol1(lII0O * l0l00, IIOIO * l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    v2 = this.I1Ol1(lII0O * l0l00 + l0l00, IIOIO * l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    I0OI0 = this.I1Ol1(lII0O * l0l00, IIOIO * l0l00 + l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    OOOOl = this.I1Ol1(lII0O * l0l00 + l0l00, IIOIO * l0l00 + l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    return this.IOIIl(this.IOIIl(OOIOI, v2, 1 - lII0O), this.IOIIl(I0OI0, OOOOl, 1 - lII0O), 1 - IIOIO);\n  };\n\n  I1O00.prototype.turbulence2d = function(x, y, OOl00, OI001, O0lOl, IOOO1, ts) {\n    var d, i, l, OOl0O, IIOII, IOOI0, ref, OO1I1;\n    if (OOl00 == null) {\n      OOl00 = 5;\n    }\n    if (OI001 == null) {\n      OI001 = .5;\n    }\n    if (O0lOl == null) {\n      O0lOl = 1.9;\n    }\n    if (IOOO1 == null) {\n      IOOO1 = this.O0IOI;\n    }\n    if (ts == null) {\n      ts = this.ll0OO;\n    }\n    OO1I1 = 0;\n    d = 1;\n    OOl0O = 0;\n    for (i = l = 1, ref = OOl00; l <= ref; i = l += 1) {\n      OO1I1 += 2 * (.5 - Math.abs(.5 - this.I1OII(x, y))) * d;\n      OOl0O += d;\n      d *= OI001;\n      IIOII = O0lOl * (x * IOOO1 + y * ts);\n      IOOI0 = O0lOl * (y * IOOO1 - x * ts);\n      x = IIOII;\n      y = IOOI0;\n    }\n    return OO1I1 / OOl0O;\n  };\n\n  I1O00.prototype.periodicTurbulence2d = function(x, y, l0l00, OOl00, OI001, O0lOl, IOOO1, ts) {\n    var lII0O, IIOIO, Illll, l1OOI, OOIOI, v2, I0OI0, OOOOl;\n    if (OOl00 == null) {\n      OOl00 = 5;\n    }\n    if (OI001 == null) {\n      OI001 = .5;\n    }\n    if (O0lOl == null) {\n      O0lOl = 1.9;\n    }\n    if (IOOO1 == null) {\n      IOOO1 = this.O0IOI;\n    }\n    if (ts == null) {\n      ts = this.ll0OO;\n    }\n    Illll = Math.floor(x / l0l00);\n    l1OOI = Math.floor(y / l0l00);\n    lII0O = x / l0l00 - Illll;\n    IIOIO = y / l0l00 - l1OOI;\n    OOIOI = this.turbulence2d(lII0O * l0l00, IIOIO * l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    v2 = this.turbulence2d(lII0O * l0l00 + l0l00, IIOIO * l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    I0OI0 = this.turbulence2d(lII0O * l0l00, IIOIO * l0l00 + l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    OOOOl = this.turbulence2d(lII0O * l0l00 + l0l00, IIOIO * l0l00 + l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    return this.IOIIl(this.IOIIl(OOIOI, v2, 1 - lII0O), this.IOIIl(I0OI0, OOOOl, 1 - lII0O), 1 - IIOIO);\n  };\n\n  I1O00.prototype.O0I00 = function(x, y, OOl00, OI001, O0lOl, IOOO1, ts) {\n    var O10OO, d, i, l, OOl0O, IIOII, IOOI0, ref, OO1I1, v;\n    if (OOl00 == null) {\n      OOl00 = 5;\n    }\n    if (OI001 == null) {\n      OI001 = .5;\n    }\n    if (O0lOl == null) {\n      O0lOl = 1.9;\n    }\n    if (IOOO1 == null) {\n      IOOO1 = this.O0IOI;\n    }\n    if (ts == null) {\n      ts = this.ll0OO;\n    }\n    OO1I1 = 0;\n    O10OO = 1;\n    d = 1;\n    OOl0O = 0;\n    for (i = l = 1, ref = OOl00; l <= ref; i = l += 1) {\n      v = this.I1OII(x, y) * 2;\n      if (v > 1) {\n        v = 2 - v;\n      }\n      v = Math.pow(v, 2);\n      OO1I1 += O10OO * d * v;\n      O10OO = v;\n      OOl0O += d;\n      d *= OI001;\n      IIOII = O0lOl * (x * IOOO1 + y * ts);\n      IOOI0 = O0lOl * (y * IOOO1 - x * ts);\n      x = IIOII;\n      y = IOOI0;\n    }\n    return OO1I1 / OOl0O;\n  };\n\n  I1O00.prototype.I0IOO = function(x, y, z, OOl00, OI001, O0lOl, IOOO1, ts) {\n    var O10OO, d, i, l, ll0lI, OOl0O, IIOII, IOOI0, OI111, ref, OO1I1, v;\n    if (OOl00 == null) {\n      OOl00 = 5;\n    }\n    if (OI001 == null) {\n      OI001 = .5;\n    }\n    if (O0lOl == null) {\n      O0lOl = 1.9;\n    }\n    if (IOOO1 == null) {\n      IOOO1 = this.O0IOI;\n    }\n    if (ts == null) {\n      ts = this.ll0OO;\n    }\n    OO1I1 = 0;\n    O10OO = 1;\n    d = 1;\n    OOl0O = 0;\n    for (i = l = 1, ref = OOl00; l <= ref; i = l += 1) {\n      v = this.l701l(x, y, z) * 2;\n      if (v > 1) {\n        v = 2 - v;\n      }\n      v = Math.pow(v, 2);\n      OO1I1 += O10OO * d * v;\n      O10OO = v;\n      OOl0O += d;\n      d *= OI001;\n      IIOII = x * IOOO1 + y * ts;\n      IOOI0 = y * IOOO1 - x * ts;\n      ll0lI = IOOI0 * IOOO1 + z * ts;\n      OI111 = z * IOOO1 - IOOI0 * ts;\n      x = O0lOl * IIOII;\n      y = O0lOl * ll0lI;\n      z = O0lOl * OI111;\n    }\n    return OO1I1 / OOl0O;\n  };\n\n  I1O00.prototype.l1lOI = function(x, y, l0l00) {\n    var lII0O, IIOIO, Ol1Il, l00I1, OlI01, OOlOO, I1l1O, O1O11, d, d1, d2, I1llO, OOIIO, O0l1l, II1l1, Ol0l0, O010l, i, j, l, m, px, lOlII, l0lOO, Ol010, l110I, O00l0;\n    l0lOO = Math.floor(x);\n    l110I = Math.floor(y);\n    lII0O = x - l0lOO;\n    IIOIO = y - l110I;\n    Ol1Il = 100;\n    l00I1 = 0;\n    OlI01 = 0;\n    OOlOO = 100;\n    I1l1O = 0;\n    O1O11 = 0;\n    for (i = l = 0; l <= 2; i = l += 1) {\n      for (j = m = 0; m <= 2; j = m += 1) {\n        Ol010 = (l0lOO - 1 + i) % l0l00;\n        O00l0 = (l110I - 1 + j) % l0l00;\n        px = -1 + i + this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + O00l0]]] * this.normalize * .8 + .1;\n        lOlII = -1 + j + this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + this.table[O00l0 + 1]]]] * this.normalize * .8 + .1;\n        I1llO = lII0O - px;\n        II1l1 = IIOIO - lOlII;\n        d = I1llO * I1llO + II1l1 * II1l1;\n        if (d < Ol1Il) {\n          OOlOO = Ol1Il;\n          I1l1O = l00I1;\n          O1O11 = OlI01;\n          Ol1Il = d;\n          l00I1 = px;\n          OlI01 = lOlII;\n        } else if (d < OOlOO) {\n          OOlOO = d;\n          I1l1O = px;\n          O1O11 = lOlII;\n        }\n      }\n    }\n    OOIIO = lII0O - l00I1;\n    Ol0l0 = IIOIO - OlI01;\n    d1 = Math.sqrt(OOIIO * OOIIO + Ol0l0 * Ol0l0);\n    O0l1l = lII0O - I1l1O;\n    O010l = IIOIO - O1O11;\n    d2 = Math.sqrt(O0l1l * O0l1l + O010l * O010l);\n    return Math.min(d1, d2) / Math.max(d1, d2);\n  };\n\n  I1O00.prototype.O1llO = function(x, y, l0l00) {\n    var lII0O, IIOIO, Ol1Il, l00I1, OlI01, O7011, d, I1llO, II1l1, i, j, l, m, px, lOlII, seed, l0lOO, Ol010, l110I, O00l0;\n    l0lOO = Math.floor(x);\n    l110I = Math.floor(y);\n    lII0O = x - l0lOO;\n    IIOIO = y - l110I;\n    Ol1Il = 100;\n    l00I1 = 0;\n    OlI01 = 0;\n    O7011 = 0;\n    for (i = l = 0; l <= 2; i = l += 1) {\n      for (j = m = 0; m <= 2; j = m += 1) {\n        Ol010 = (l0lOO - 1 + i) % l0l00;\n        O00l0 = (l110I - 1 + j) % l0l00;\n        px = -1 + i + this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + O00l0]]] * this.normalize * .8 + .1;\n        lOlII = -1 + j + this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + this.table[O00l0 + 1]]]] * this.normalize * .8 + .1;\n        seed = this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + this.table[O00l0 + 17]]]];\n        I1llO = lII0O - px;\n        II1l1 = IIOIO - lOlII;\n        d = I1llO * I1llO + II1l1 * II1l1;\n        if (d < Ol1Il) {\n          Ol1Il = d;\n          l00I1 = px;\n          OlI01 = lOlII;\n          O7011 = seed;\n        }\n      }\n    }\n    return O7011 * this.normalize;\n  };\n\n  I1O00.prototype.l1ll1 = function(x, y, z, l0l00) {\n    var lII0O, IIOIO, az, Ol1Il, l00I1, OlI01, IIOll, OOlOO, I1l1O, O1O11, Il010, d, d1, d2, I1llO, OOIIO, O0l1l, II1l1, Ol0l0, O010l, IlIII, lIIIl, IOOl1, i, j, k, l, m, n, px, lOlII, IOIl0, l0lOO, Ol010, l110I, O00l0, O11IO, lO0O1;\n    if (l0l00 == null) {\n      l0l00 = 100;\n    }\n    l0lOO = Math.floor(x);\n    l110I = Math.floor(y);\n    O11IO = Math.floor(z);\n    lII0O = x - l0lOO;\n    IIOIO = y - l110I;\n    az = z - O11IO;\n    Ol1Il = 100;\n    l00I1 = 0;\n    OlI01 = 0;\n    IIOll = 0;\n    OOlOO = 100;\n    I1l1O = 0;\n    O1O11 = 0;\n    Il010 = 0;\n    for (i = l = 0; l <= 2; i = l += 1) {\n      for (j = m = 0; m <= 2; j = m += 1) {\n        for (k = n = 0; n <= 2; k = n += 1) {\n          Ol010 = ((l0lOO - 1 + i) % l0l00) & this.I1II0;\n          O00l0 = ((l110I - 1 + j) % l0l00) & this.I1II0;\n          lO0O1 = ((O11IO - 1 + k) % l0l00) & this.I1II0;\n          px = -1 + i + this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + this.table[lO0O1 + O00l0]]]] * this.normalize;\n          lOlII = -1 + j + this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + this.table[this.table[O00l0 + lO0O1] + 1]]]] * this.normalize;\n          IOIl0 = -1 + k + this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + this.table[this.table[O00l0 + lO0O1] + 37]]]] * this.normalize;\n        }\n        I1llO = lII0O - px;\n        II1l1 = IIOIO - lOlII;\n        IlIII = az - IOIl0;\n        d = I1llO * I1llO + II1l1 * II1l1 + IlIII * IlIII;\n        if (d < Ol1Il) {\n          OOlOO = Ol1Il;\n          I1l1O = l00I1;\n          O1O11 = OlI01;\n          Il010 = IIOll;\n          Ol1Il = d;\n          l00I1 = px;\n          OlI01 = lOlII;\n          IIOll = IOIl0;\n        } else if (d < OOlOO) {\n          OOlOO = d;\n          I1l1O = px;\n          O1O11 = lOlII;\n          Il010 = IOIl0;\n        }\n      }\n    }\n    OOIIO = lII0O - l00I1;\n    Ol0l0 = IIOIO - OlI01;\n    lIIIl = az - IIOll;\n    d1 = Math.sqrt(OOIIO * OOIIO + Ol0l0 * Ol0l0 + lIIIl * lIIIl);\n    O0l1l = lII0O - I1l1O;\n    O010l = IIOIO - O1O11;\n    IOOl1 = az - Il010;\n    d2 = Math.sqrt(O0l1l * O0l1l + O010l * O010l + IOOl1 * IOOl1);\n    return Math.min(d1, d2) / Math.max(d1, d2);\n  };\n\n  I1O00.II010 = function(size) {\n    var i, index, l, ref, t, v;\n    t = [];\n    for (i = l = 0, ref = size - 1; 0 <= ref ? l <= ref : l >= ref; i = 0 <= ref ? ++l : --l) {\n      t[i] = i;\n    }\n    v = [];\n    while (true) {\n      if (t.length === 0) {\n        break;\n      }\n      index = Math.floor(Math.random() * t.length);\n      v.push(t.splice(index, 1)[0]);\n    }\n    return v;\n  };\n\n  return I1O00;\n\n})();"),
                 (this.Nebulas = (function () {
                     function t(t) {
                         var e,
@@ -18384,7 +18384,7 @@
                 }),
                 (nebulasworker = "self.onmessage = " + workerfunk + ";"),
                 (nebulasworker +=
-                    "var Gradient = (function() {\n  function Gradient(lOI1O) {\n    this.lOI1O = lOI1O;\n    if (this.lOI1O == null) {\n      this.lOI1O = [];\n    }\n  }\n\n  Gradient.prototype.add = function(v) {\n    return this.lOI1O.push(v);\n  };\n\n  Gradient.prototype.getInt = function(x) {\n    var a, b, index, OOIOI, v2;\n    if (this.lOI1O.length === 0) {\n      return 0;\n    }\n    OOIOI = v2 = this.lOI1O[0];\n    if (x <= OOIOI[0]) {\n      return (OOIOI[1] << 16) | (OOIOI[2] << 8) | OOIOI[3];\n    }\n    index = 1;\n    while (true) {\n      if (x < v2[0] || index >= this.lOI1O.length - 1) {\n        break;\n      }\n      OOIOI = v2;\n      v2 = this.lOI1O[index++];\n    }\n    if (x >= v2[0]) {\n      return (v2[1] << 16) | (v2[2] << 8) | v2[3];\n    } else {\n      b = (x - OOIOI[0]) / (v2[0] - OOIOI[0]);\n      a = (v2[0] - x) / (v2[0] - OOIOI[0]);\n      return ((a * OOIOI[1] + b * v2[1]) << 16) | ((a * OOIOI[2] + b * v2[2]) << 8) | ((a * OOIOI[3] + b * v2[3]) | 0);\n    }\n  };\n\n  Gradient.prototype.get = function(x) {\n    var a, b, index, OOIOI, v2;\n    if (this.lOI1O.length === 0) {\n      return [0, 0, 0];\n    }\n    OOIOI = v2 = this.lOI1O[0];\n    if (x <= OOIOI[0]) {\n      return [OOIOI[1], OOIOI[2], OOIOI[3]];\n    }\n    index = 1;\n    while (true) {\n      if (x < v2[0] || index >= this.lOI1O.length - 1) {\n        break;\n      }\n      OOIOI = v2;\n      v2 = this.lOI1O[index++];\n    }\n    if (x >= v2[0]) {\n      return [v2[1], v2[2], v2[3]];\n    } else {\n      b = (x - OOIOI[0]) / (v2[0] - OOIOI[0]);\n      a = (v2[0] - x) / (v2[0] - OOIOI[0]);\n      return [a * OOIOI[1] + b * v2[1], a * OOIOI[2] + b * v2[2], a * OOIOI[3] + b * v2[3]];\n    }\n  };\n\n  return Gradient;\n\n})();\n\nvar lI0IO = (function() {\n  function lI0IO() {}\n\n  lI0IO.OO0O0 = function(h, s, v, I1lI0) {\n    var b, f, g, i, p, q, r, t;\n    if (I1lI0 == null) {\n      I1lI0 = [];\n    }\n    i = Math.floor(h * 6);\n    f = h * 6 - i;\n    p = v * (1 - s);\n    q = v * (1 - f * s);\n    t = v * (1 - (1 - f) * s);\n    switch (i % 6) {\n      case 0:\n        r = v;\n        g = t;\n        b = p;\n        break;\n      case 1:\n        r = q;\n        g = v;\n        b = p;\n        break;\n      case 2:\n        r = p;\n        g = v;\n        b = t;\n        break;\n      case 3:\n        r = p;\n        g = q;\n        b = v;\n        break;\n      case 4:\n        r = t;\n        g = p;\n        b = v;\n        break;\n      case 5:\n        r = v;\n        g = p;\n        b = q;\n    }\n    I1lI0[0] = (r * 255) | 0;\n    I1lI0[1] = (g * 255) | 0;\n    I1lI0[2] = (b * 255) | 0;\n    return I1lI0;\n  };\n\n  lI0IO.hsvToRgbHex = function(h, s, v) {\n    var b, f, g, i, p, q, r, t;\n    i = Math.floor(h * 6);\n    f = h * 6 - i;\n    p = v * (1 - s);\n    q = v * (1 - f * s);\n    t = v * (1 - (1 - f) * s);\n    switch (i % 6) {\n      case 0:\n        r = v;\n        g = t;\n        b = p;\n        break;\n      case 1:\n        r = q;\n        g = v;\n        b = p;\n        break;\n      case 2:\n        r = p;\n        g = v;\n        b = t;\n        break;\n      case 3:\n        r = p;\n        g = q;\n        b = v;\n        break;\n      case 4:\n        r = t;\n        g = p;\n        b = v;\n        break;\n      case 5:\n        r = v;\n        g = p;\n        b = q;\n    }\n    return (((r * 255) | 0) << 16) | (((g * 255) | 0) << 8) | ((b * 255) | 0);\n  };\n\n  return lI0IO;\n\n})();\n\nvar III01 = (function() {\n  function III01(seed) {\n    this.seed = seed != null ? seed : Math.random();\n    if (this.seed < 1) {\n      this.seed *= 1 << 30;\n    }\n    this.a = 13971;\n    this.b = 12345;\n    this.size = 1 << 30;\n    this.I1II0 = this.size - 1;\n    this.OOl0O = 1 / this.size;\n    this.I1l10();\n    this.I1l10();\n    this.I1l10();\n  }\n\n  III01.prototype.next = function() {\n    this.seed = (this.seed * this.a + this.b) & this.I1II0;\n    return this.seed * this.OOl0O;\n  };\n\n  III01.prototype.I1OOl = function(lI000, pow) {\n    if (pow != null) {\n      return Math.floor(Math.pow(this.next(), pow) * lI000);\n    } else {\n      return Math.floor(this.next() * lI000);\n    }\n  };\n\n  III01.prototype.I1l10 = function() {\n    return this.seed = (this.seed * this.a + this.b) & this.I1II0;\n  };\n\n  III01.prototype.feed = function(number) {\n    return this.seed = (this.seed * this.a * number + this.b) & this.I1II0;\n  };\n\n  return III01;\n\n})();\n\nvar I1O00 = (function() {\n  function I1O00(OO1ll) {\n    var i, l, len, ref;\n    this.seed = OO1ll;\n    this.table = [670, 243, 963, 607, 432, 29, 624, 809, 254, 752, 691, 904, 275, 984, 586, 94, 1014, 614, 252, 178, 488, 954, 55, 836, 186, 858, 719, 562, 685, 898, 167, 844, 639, 505, 85, 386, 520, 988, 561, 889, 91, 329, 900, 847, 334, 531, 168, 57, 789, 529, 259, 323, 313, 72, 153, 606, 694, 442, 547, 922, 242, 983, 965, 876, 39, 728, 383, 109, 343, 810, 815, 144, 457, 434, 221, 279, 328, 136, 674, 556, 502, 896, 582, 250, 665, 370, 926, 912, 118, 543, 365, 467, 311, 700, 15, 297, 609, 731, 476, 634, 715, 777, 62, 1007, 525, 942, 310, 627, 630, 448, 437, 822, 300, 339, 924, 583, 92, 800, 698, 312, 542, 740, 271, 778, 895, 447, 175, 957, 17, 481, 347, 283, 366, 277, 843, 966, 927, 535, 503, 234, 746, 712, 1010, 544, 671, 295, 978, 729, 997, 287, 621, 782, 160, 433, 537, 121, 413, 304, 98, 657, 498, 946, 319, 595, 191, 341, 554, 523, 274, 209, 435, 644, 947, 979, 397, 261, 681, 786, 1006, 565, 472, 180, 318, 126, 874, 693, 526, 276, 340, 808, 884, 409, 486, 962, 960, 772, 901, 690, 359, 837, 129, 363, 509, 616, 88, 382, 730, 513, 623, 999, 504, 48, 4, 384, 281, 560, 417, 99, 773, 956, 943, 496, 558, 218, 170, 471, 536, 138, 19, 266, 6, 868, 845, 16, 985, 866, 601, 445, 458, 894, 950, 349, 1017, 125, 495, 723, 446, 647, 834, 880, 272, 475, 483, 227, 357, 750, 851, 139, 406, 336, 158, 284, 482, 324, 991, 632, 587, 663, 74, 256, 541, 120, 801, 831, 46, 522, 589, 1, 571, 368, 137, 761, 885, 968, 982, 948, 785, 391, 840, 932, 829, 117, 641, 466, 367, 688, 733, 229, 735, 14, 205, 31, 316, 333, 183, 521, 795, 58, 1021, 282, 794, 939, 40, 394, 793, 1002, 763, 212, 484, 133, 260, 465, 396, 769, 518, 955, 497, 377, 145, 508, 514, 224, 196, 454, 176, 975, 865, 1005, 1023, 986, 596, 426, 893, 551, 90, 130, 873, 22, 709, 686, 436, 236, 661, 579, 764, 362, 141, 112, 970, 987, 12, 317, 369, 26, 344, 66, 803, 493, 716, 9, 637, 945, 225, 703, 78, 346, 751, 123, 1009, 1016, 27, 52, 864, 902, 921, 292, 314, 599, 799, 263, 626, 338, 953, 491, 892, 353, 692, 917, 540, 882, 677, 744, 633, 821, 327, 60, 1020, 928, 788, 360, 414, 430, 462, 824, 820, 727, 398, 342, 273, 726, 981, 84, 82, 206, 388, 720, 806, 652, 550, 238, 159, 134, 732, 897, 500, 881, 805, 814, 701, 717, 566, 7, 211, 604, 816, 56, 658, 107, 61, 374, 320, 501, 13, 642, 863, 791, 438, 348, 97, 214, 86, 305, 875, 656, 24, 364, 767, 156, 879, 590, 734, 920, 655, 577, 83, 584, 660, 38, 100, 299, 580, 990, 636, 944, 463, 766, 996, 714, 8, 515, 87, 198, 280, 444, 131, 404, 108, 278, 487, 223, 598, 410, 395, 199, 268, 989, 75, 195, 760, 916, 977, 421, 11, 1000, 813, 216, 817, 823, 164, 668, 739, 572, 30, 707, 798, 291, 564, 77, 456, 478, 68, 643, 615, 172, 841, 672, 919, 1012, 613, 385, 980, 711, 771, 682, 232, 765, 143, 620, 631, 861, 468, 622, 201, 325, 424, 189, 608, 403, 775, 646, 673, 1013, 400, 859, 838, 345, 210, 860, 65, 63, 34, 755, 161, 479, 235, 783, 460, 826, 507, 854, 839, 666, 802, 441, 114, 443, 738, 770, 929, 857, 907, 741, 935, 949, 322, 995, 217, 667, 269, 184, 650, 1018, 506, 290, 787, 459, 721, 828, 567, 222, 494, 142, 743, 405, 76, 722, 588, 147, 899, 270, 695, 597, 337, 155, 569, 679, 853, 450, 21, 517, 197, 371, 257, 380, 244, 553, 952, 381, 827, 524, 877, 702, 306, 600, 1011, 431, 781, 594, 387, 1019, 411, 533, 659, 177, 725, 930, 933, 832, 41, 2, 687, 1008, 439, 307, 891, 871, 415, 651, 308, 298, 811, 0, 194, 592, 241, 918, 18, 973, 110, 654, 967, 490, 683, 914, 128, 992, 964, 122, 230, 149, 289, 392, 416, 852, 936, 262, 102, 938, 511, 255, 510, 165, 105, 419, 958, 294, 379, 49, 699, 330, 593, 539, 710, 106, 79, 440, 200, 704, 961, 326, 321, 759, 193, 890, 44, 549, 913, 776, 909, 552, 972, 132, 429, 748, 532, 115, 888, 635, 842, 649, 747, 807, 887, 856, 784, 148, 530, 116, 157, 372, 754, 28, 581, 67, 187, 202, 818, 181, 45, 959, 146, 124, 994, 872, 675, 706, 253, 247, 625, 570, 152, 423, 185, 361, 849, 971, 546, 412, 830, 1022, 188, 850, 140, 220, 451, 219, 768, 1015, 455, 780, 976, 449, 969, 848, 293, 249, 59, 390, 512, 538, 578, 906, 819, 862, 974, 33, 911, 135, 908, 248, 401, 951, 527, 169, 676, 640, 1003, 591, 103, 37, 285, 684, 104, 163, 753, 1004, 934, 645, 470, 774, 20, 489, 228, 461, 492, 469, 998, 296, 233, 869, 605, 315, 36, 5, 425, 878, 617, 886, 23, 355, 993, 93, 473, 555, 474, 464, 937, 925, 1001, 611, 35, 812, 174, 53, 286, 680, 267, 428, 335, 883, 653, 69, 718, 585, 749, 150, 408, 393, 915, 576, 664, 629, 756, 402, 638, 602, 245, 43, 545, 213, 303, 192, 70, 453, 910, 407, 742, 111, 548, 835, 452, 575, 903, 619, 376, 154, 302, 151, 804, 867, 574, 563, 239, 648, 179, 855, 378, 618, 264, 669, 427, 354, 399, 265, 50, 796, 166, 923, 825, 697, 534, 54, 173, 870, 792, 162, 713, 246, 89, 51, 350, 705, 251, 557, 237, 240, 736, 689, 203, 519, 73, 81, 628, 288, 331, 204, 528, 480, 389, 32, 418, 573, 757, 358, 215, 226, 42, 779, 231, 171, 190, 612, 301, 762, 708, 420, 846, 208, 485, 351, 790, 737, 10, 258, 309, 797, 127, 516, 559, 499, 352, 71, 758, 25, 568, 113, 3, 610, 101, 375, 96, 603, 745, 64, 80, 477, 332, 833, 940, 373, 905, 422, 182, 356, 941, 47, 119, 662, 931, 696, 95, 724, 678, 207];\n    len = this.table.length;\n    for (i = l = 0, ref = len - 1; 0 <= ref ? l <= ref : l >= ref; i = 0 <= ref ? ++l : --l) {\n      this.table.push(this.table[i]);\n    }\n    if (this.seed < 1) {\n      this.seed *= 1 << 30;\n    }\n    this.size = 1024;\n    this.normalize = 1 / 1023;\n    this.I1II0 = 1023;\n    this.lIlll = this.seed & this.I1II0;\n    this.Illl0 = (this.seed >> 10) & this.I1II0;\n    this.IlIll = (this.seed >> 20) & this.I1II0;\n    this.c2d = [];\n    this.O0IOI = Math.cos(.3);\n    this.ll0OO = Math.sin(.3);\n  }\n\n  I1O00.prototype.IOIIl = function(x, y, a) {\n    var c;\n    c = (-2 * a + 3) * a * a;\n    return x * (1 - c) + y * c;\n  };\n\n  I1O00.prototype.IIlIO = function(x, y, a) {\n    return x * (1 - a) + y * a;\n  };\n\n  I1O00.prototype.I1OII = function(x, y) {\n    var lII0O, IIOIO, OOIOI, v2, I0OI0, OOOOl, l0lOO, l110I;\n    l0lOO = Math.floor(x);\n    l110I = Math.floor(y);\n    lII0O = x - l0lOO;\n    IIOIO = y - l110I;\n    l0lOO = l0lOO & this.I1II0;\n    l110I = l110I & this.I1II0;\n    OOIOI = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + this.Illl0]]];\n    v2 = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + this.Illl0]]];\n    I0OI0 = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + 1 + this.Illl0]]];\n    OOOOl = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + 1 + this.Illl0]]];\n    return this.IOIIl(this.IOIIl(OOIOI, v2, lII0O), this.IOIIl(I0OI0, OOOOl, lII0O), IIOIO) * this.normalize;\n  };\n\n  I1O00.prototype.l101l = function(x, y, z) {\n    var lII0O, IIOIO, az, OOIOI, v2, I0OI0, OOOOl, Ol0Ol, OO101, IO101, IlOIl, O0I0I, ll11O, l0lOO, l110I, O11IO;\n    l0lOO = Math.floor(x);\n    l110I = Math.floor(y);\n    O11IO = Math.floor(z);\n    lII0O = x - l0lOO;\n    IIOIO = y - l110I;\n    az = z - O11IO;\n    l0lOO = l0lOO & this.I1II0;\n    l110I = l110I & this.I1II0;\n    O11IO = O11IO & this.I1II0;\n    OOIOI = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    v2 = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    I0OI0 = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    OOOOl = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    Ol0Ol = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    OO101 = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    IO101 = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    IlOIl = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    O0I0I = this.IOIIl(this.IOIIl(OOIOI, v2, lII0O), this.IOIIl(I0OI0, OOOOl, lII0O), IIOIO);\n    ll11O = this.IOIIl(this.IOIIl(Ol0Ol, OO101, lII0O), this.IOIIl(IO101, IlOIl, lII0O), IIOIO);\n    return this.IOIIl(O0I0I, ll11O, az) * this.normalize;\n  };\n\n  I1O00.prototype.O100O = function(x, y, z) {\n    var lII0O, IIOIO, az, OOIOI, v2, I0OI0, OOOOl, Ol0Ol, OO101, IO101, IlOIl, O0I0I, ll11O, l0lOO, l110I, O11IO;\n    l0lOO = Math.floor(x);\n    l110I = Math.floor(y);\n    O11IO = Math.floor(z);\n    lII0O = x - l0lOO;\n    IIOIO = y - l110I;\n    az = z - O11IO;\n    l0lOO = l0lOO & this.I1II0;\n    l110I = l110I & this.I1II0;\n    O11IO = O11IO & this.I1II0;\n    OOIOI = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    v2 = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    I0OI0 = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    OOOOl = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    Ol0Ol = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    OO101 = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    IO101 = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    IlOIl = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    O0I0I = this.IIlIO(this.IIlIO(OOIOI, v2, lII0O), this.IIlIO(I0OI0, OOOOl, lII0O), IIOIO);\n    ll11O = this.IIlIO(this.IIlIO(Ol0Ol, OO101, lII0O), this.IIlIO(IO101, IlOIl, lII0O), IIOIO);\n    return this.IIlIO(O0I0I, ll11O, az) * this.normalize;\n  };\n\n  I1O00.prototype.I0l01 = function(Illll, l1OOI, iz) {};\n\n  I1O00.prototype.I1Ol1 = function(x, y, OOl00, OI001, O0lOl, IOOO1, ts) {\n    var d, i, l, OOl0O, IIOII, IOOI0, ref, OO1I1;\n    if (OOl00 == null) {\n      OOl00 = 5;\n    }\n    if (OI001 == null) {\n      OI001 = .5;\n    }\n    if (O0lOl == null) {\n      O0lOl = 1.9;\n    }\n    if (IOOO1 == null) {\n      IOOO1 = this.O0IOI;\n    }\n    if (ts == null) {\n      ts = this.ll0OO;\n    }\n    OO1I1 = 0;\n    d = 1;\n    OOl0O = 0;\n    for (i = l = 1, ref = OOl00; l <= ref; i = l += 1) {\n      OO1I1 += this.I1OII(x, y) * d;\n      OOl0O += d;\n      d *= OI001;\n      IIOII = O0lOl * (x * IOOO1 + y * ts);\n      IOOI0 = O0lOl * (y * IOOO1 - x * ts);\n      x = IIOII;\n      y = IOOI0;\n    }\n    return OO1I1 / OOl0O;\n  };\n\n  I1O00.prototype.l001I = function(x, y, z, OOl00, OI001, O0lOl, IOOO1, ts) {\n    var d, i, l, OOl0O, IIOII, IOOI0, ref, OO1I1;\n    if (OOl00 == null) {\n      OOl00 = 5;\n    }\n    if (OI001 == null) {\n      OI001 = .5;\n    }\n    if (O0lOl == null) {\n      O0lOl = 1.9;\n    }\n    if (IOOO1 == null) {\n      IOOO1 = this.O0IOI;\n    }\n    if (ts == null) {\n      ts = this.ll0OO;\n    }\n    OO1I1 = 0;\n    d = 1;\n    OOl0O = 0;\n    for (i = l = 1, ref = OOl00; l <= ref; i = l += 1) {\n      OO1I1 += this.l101l(x, y, z) * d;\n      OOl0O += d;\n      d *= OI001;\n      IIOII = O0lOl * (x * IOOO1 + y * ts);\n      IOOI0 = O0lOl * (y * IOOO1 - x * ts);\n      x = IIOII;\n      y = IOOI0;\n      z = O0lOl * z;\n    }\n    return OO1I1 / OOl0O;\n  };\n\n  I1O00.prototype.lII01 = function(x, y, l0l00, OOl00, OI001, O0lOl, IOOO1, ts) {\n    var lII0O, IIOIO, Illll, l1OOI, OOIOI, v2, I0OI0, OOOOl;\n    if (OOl00 == null) {\n      OOl00 = 5;\n    }\n    if (OI001 == null) {\n      OI001 = .5;\n    }\n    if (O0lOl == null) {\n      O0lOl = 1.9;\n    }\n    if (IOOO1 == null) {\n      IOOO1 = this.O0IOI;\n    }\n    if (ts == null) {\n      ts = this.ll0OO;\n    }\n    Illll = Math.floor(x / l0l00);\n    l1OOI = Math.floor(y / l0l00);\n    lII0O = x / l0l00 - Illll;\n    IIOIO = y / l0l00 - l1OOI;\n    OOIOI = this.I1Ol1(lII0O * l0l00, IIOIO * l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    v2 = this.I1Ol1(lII0O * l0l00 + l0l00, IIOIO * l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    I0OI0 = this.I1Ol1(lII0O * l0l00, IIOIO * l0l00 + l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    OOOOl = this.I1Ol1(lII0O * l0l00 + l0l00, IIOIO * l0l00 + l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    return this.IOIIl(this.IOIIl(OOIOI, v2, 1 - lII0O), this.IOIIl(I0OI0, OOOOl, 1 - lII0O), 1 - IIOIO);\n  };\n\n  I1O00.prototype.turbulence2d = function(x, y, OOl00, OI001, O0lOl, IOOO1, ts) {\n    var d, i, l, OOl0O, IIOII, IOOI0, ref, OO1I1;\n    if (OOl00 == null) {\n      OOl00 = 5;\n    }\n    if (OI001 == null) {\n      OI001 = .5;\n    }\n    if (O0lOl == null) {\n      O0lOl = 1.9;\n    }\n    if (IOOO1 == null) {\n      IOOO1 = this.O0IOI;\n    }\n    if (ts == null) {\n      ts = this.ll0OO;\n    }\n    OO1I1 = 0;\n    d = 1;\n    OOl0O = 0;\n    for (i = l = 1, ref = OOl00; l <= ref; i = l += 1) {\n      OO1I1 += 2 * (.5 - Math.abs(.5 - this.I1OII(x, y))) * d;\n      OOl0O += d;\n      d *= OI001;\n      IIOII = O0lOl * (x * IOOO1 + y * ts);\n      IOOI0 = O0lOl * (y * IOOO1 - x * ts);\n      x = IIOII;\n      y = IOOI0;\n    }\n    return OO1I1 / OOl0O;\n  };\n\n  I1O00.prototype.periodicTurbulence2d = function(x, y, l0l00, OOl00, OI001, O0lOl, IOOO1, ts) {\n    var lII0O, IIOIO, Illll, l1OOI, OOIOI, v2, I0OI0, OOOOl;\n    if (OOl00 == null) {\n      OOl00 = 5;\n    }\n    if (OI001 == null) {\n      OI001 = .5;\n    }\n    if (O0lOl == null) {\n      O0lOl = 1.9;\n    }\n    if (IOOO1 == null) {\n      IOOO1 = this.O0IOI;\n    }\n    if (ts == null) {\n      ts = this.ll0OO;\n    }\n    Illll = Math.floor(x / l0l00);\n    l1OOI = Math.floor(y / l0l00);\n    lII0O = x / l0l00 - Illll;\n    IIOIO = y / l0l00 - l1OOI;\n    OOIOI = this.turbulence2d(lII0O * l0l00, IIOIO * l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    v2 = this.turbulence2d(lII0O * l0l00 + l0l00, IIOIO * l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    I0OI0 = this.turbulence2d(lII0O * l0l00, IIOIO * l0l00 + l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    OOOOl = this.turbulence2d(lII0O * l0l00 + l0l00, IIOIO * l0l00 + l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    return this.IOIIl(this.IOIIl(OOIOI, v2, 1 - lII0O), this.IOIIl(I0OI0, OOOOl, 1 - lII0O), 1 - IIOIO);\n  };\n\n  I1O00.prototype.O0I00 = function(x, y, OOl00, OI001, O0lOl, IOOO1, ts) {\n    var O10OO, d, i, l, OOl0O, IIOII, IOOI0, ref, OO1I1, v;\n    if (OOl00 == null) {\n      OOl00 = 5;\n    }\n    if (OI001 == null) {\n      OI001 = .5;\n    }\n    if (O0lOl == null) {\n      O0lOl = 1.9;\n    }\n    if (IOOO1 == null) {\n      IOOO1 = this.O0IOI;\n    }\n    if (ts == null) {\n      ts = this.ll0OO;\n    }\n    OO1I1 = 0;\n    O10OO = 1;\n    d = 1;\n    OOl0O = 0;\n    for (i = l = 1, ref = OOl00; l <= ref; i = l += 1) {\n      v = this.I1OII(x, y) * 2;\n      if (v > 1) {\n        v = 2 - v;\n      }\n      v = Math.pow(v, 2);\n      OO1I1 += O10OO * d * v;\n      O10OO = v;\n      OOl0O += d;\n      d *= OI001;\n      IIOII = O0lOl * (x * IOOO1 + y * ts);\n      IOOI0 = O0lOl * (y * IOOO1 - x * ts);\n      x = IIOII;\n      y = IOOI0;\n    }\n    return OO1I1 / OOl0O;\n  };\n\n  I1O00.prototype.I0IOO = function(x, y, z, OOl00, OI001, O0lOl, IOOO1, ts) {\n    var O10OO, d, i, l, ll0lI, OOl0O, IIOII, IOOI0, OI111, ref, OO1I1, v;\n    if (OOl00 == null) {\n      OOl00 = 5;\n    }\n    if (OI001 == null) {\n      OI001 = .5;\n    }\n    if (O0lOl == null) {\n      O0lOl = 1.9;\n    }\n    if (IOOO1 == null) {\n      IOOO1 = this.O0IOI;\n    }\n    if (ts == null) {\n      ts = this.ll0OO;\n    }\n    OO1I1 = 0;\n    O10OO = 1;\n    d = 1;\n    OOl0O = 0;\n    for (i = l = 1, ref = OOl00; l <= ref; i = l += 1) {\n      v = this.l101l(x, y, z) * 2;\n      if (v > 1) {\n        v = 2 - v;\n      }\n      v = Math.pow(v, 2);\n      OO1I1 += O10OO * d * v;\n      O10OO = v;\n      OOl0O += d;\n      d *= OI001;\n      IIOII = x * IOOO1 + y * ts;\n      IOOI0 = y * IOOO1 - x * ts;\n      ll0lI = IOOI0 * IOOO1 + z * ts;\n      OI111 = z * IOOO1 - IOOI0 * ts;\n      x = O0lOl * IIOII;\n      y = O0lOl * ll0lI;\n      z = O0lOl * OI111;\n    }\n    return OO1I1 / OOl0O;\n  };\n\n  I1O00.prototype.l1lOI = function(x, y, l0l00) {\n    var lII0O, IIOIO, Ol1Il, l00I1, OlI01, OOlOO, I1l1O, O1O11, d, d1, d2, I1llO, OOIIO, O0l1l, II1l1, Ol0l0, O010l, i, j, l, m, px, lOlII, l0lOO, Ol010, l110I, O00l0;\n    l0lOO = Math.floor(x);\n    l110I = Math.floor(y);\n    lII0O = x - l0lOO;\n    IIOIO = y - l110I;\n    Ol1Il = 100;\n    l00I1 = 0;\n    OlI01 = 0;\n    OOlOO = 100;\n    I1l1O = 0;\n    O1O11 = 0;\n    for (i = l = 0; l <= 2; i = l += 1) {\n      for (j = m = 0; m <= 2; j = m += 1) {\n        Ol010 = (l0lOO - 1 + i) % l0l00;\n        O00l0 = (l110I - 1 + j) % l0l00;\n        px = -1 + i + this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + O00l0]]] * this.normalize * .8 + .1;\n        lOlII = -1 + j + this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + this.table[O00l0 + 1]]]] * this.normalize * .8 + .1;\n        I1llO = lII0O - px;\n        II1l1 = IIOIO - lOlII;\n        d = I1llO * I1llO + II1l1 * II1l1;\n        if (d < Ol1Il) {\n          OOlOO = Ol1Il;\n          I1l1O = l00I1;\n          O1O11 = OlI01;\n          Ol1Il = d;\n          l00I1 = px;\n          OlI01 = lOlII;\n        } else if (d < OOlOO) {\n          OOlOO = d;\n          I1l1O = px;\n          O1O11 = lOlII;\n        }\n      }\n    }\n    OOIIO = lII0O - l00I1;\n    Ol0l0 = IIOIO - OlI01;\n    d1 = Math.sqrt(OOIIO * OOIIO + Ol0l0 * Ol0l0);\n    O0l1l = lII0O - I1l1O;\n    O010l = IIOIO - O1O11;\n    d2 = Math.sqrt(O0l1l * O0l1l + O010l * O010l);\n    return Math.min(d1, d2) / Math.max(d1, d2);\n  };\n\n  I1O00.prototype.O1llO = function(x, y, l0l00) {\n    var lII0O, IIOIO, Ol1Il, l00I1, OlI01, O1011, d, I1llO, II1l1, i, j, l, m, px, lOlII, seed, l0lOO, Ol010, l110I, O00l0;\n    l0lOO = Math.floor(x);\n    l110I = Math.floor(y);\n    lII0O = x - l0lOO;\n    IIOIO = y - l110I;\n    Ol1Il = 100;\n    l00I1 = 0;\n    OlI01 = 0;\n    O1011 = 0;\n    for (i = l = 0; l <= 2; i = l += 1) {\n      for (j = m = 0; m <= 2; j = m += 1) {\n        Ol010 = (l0lOO - 1 + i) % l0l00;\n        O00l0 = (l110I - 1 + j) % l0l00;\n        px = -1 + i + this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + O00l0]]] * this.normalize * .8 + .1;\n        lOlII = -1 + j + this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + this.table[O00l0 + 1]]]] * this.normalize * .8 + .1;\n        seed = this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + this.table[O00l0 + 17]]]];\n        I1llO = lII0O - px;\n        II1l1 = IIOIO - lOlII;\n        d = I1llO * I1llO + II1l1 * II1l1;\n        if (d < Ol1Il) {\n          Ol1Il = d;\n          l00I1 = px;\n          OlI01 = lOlII;\n          O1011 = seed;\n        }\n      }\n    }\n    return O1011 * this.normalize;\n  };\n\n  I1O00.prototype.l1ll1 = function(x, y, z, l0l00) {\n    var lII0O, IIOIO, az, Ol1Il, l00I1, OlI01, IIOll, OOlOO, I1l1O, O1O11, Il010, d, d1, d2, I1llO, OOIIO, O0l1l, II1l1, Ol0l0, O010l, IlIII, lIIIl, IOOl1, i, j, k, l, m, n, px, lOlII, IOIl0, l0lOO, Ol010, l110I, O00l0, O11IO, lO0O1;\n    if (l0l00 == null) {\n      l0l00 = 100;\n    }\n    l0lOO = Math.floor(x);\n    l110I = Math.floor(y);\n    O11IO = Math.floor(z);\n    lII0O = x - l0lOO;\n    IIOIO = y - l110I;\n    az = z - O11IO;\n    Ol1Il = 100;\n    l00I1 = 0;\n    OlI01 = 0;\n    IIOll = 0;\n    OOlOO = 100;\n    I1l1O = 0;\n    O1O11 = 0;\n    Il010 = 0;\n    for (i = l = 0; l <= 2; i = l += 1) {\n      for (j = m = 0; m <= 2; j = m += 1) {\n        for (k = n = 0; n <= 2; k = n += 1) {\n          Ol010 = ((l0lOO - 1 + i) % l0l00) & this.I1II0;\n          O00l0 = ((l110I - 1 + j) % l0l00) & this.I1II0;\n          lO0O1 = ((O11IO - 1 + k) % l0l00) & this.I1II0;\n          px = -1 + i + this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + this.table[lO0O1 + O00l0]]]] * this.normalize;\n          lOlII = -1 + j + this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + this.table[this.table[O00l0 + lO0O1] + 1]]]] * this.normalize;\n          IOIl0 = -1 + k + this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + this.table[this.table[O00l0 + lO0O1] + 37]]]] * this.normalize;\n        }\n        I1llO = lII0O - px;\n        II1l1 = IIOIO - lOlII;\n        IlIII = az - IOIl0;\n        d = I1llO * I1llO + II1l1 * II1l1 + IlIII * IlIII;\n        if (d < Ol1Il) {\n          OOlOO = Ol1Il;\n          I1l1O = l00I1;\n          O1O11 = OlI01;\n          Il010 = IIOll;\n          Ol1Il = d;\n          l00I1 = px;\n          OlI01 = lOlII;\n          IIOll = IOIl0;\n        } else if (d < OOlOO) {\n          OOlOO = d;\n          I1l1O = px;\n          O1O11 = lOlII;\n          Il010 = IOIl0;\n        }\n      }\n    }\n    OOIIO = lII0O - l00I1;\n    Ol0l0 = IIOIO - OlI01;\n    lIIIl = az - IIOll;\n    d1 = Math.sqrt(OOIIO * OOIIO + Ol0l0 * Ol0l0 + lIIIl * lIIIl);\n    O0l1l = lII0O - I1l1O;\n    O010l = IIOIO - O1O11;\n    IOOl1 = az - Il010;\n    d2 = Math.sqrt(O0l1l * O0l1l + O010l * O010l + IOOl1 * IOOl1);\n    return Math.min(d1, d2) / Math.max(d1, d2);\n  };\n\n  I1O00.II010 = function(size) {\n    var i, index, l, ref, t, v;\n    t = [];\n    for (i = l = 0, ref = size - 1; 0 <= ref ? l <= ref : l >= ref; i = 0 <= ref ? ++l : --l) {\n      t[i] = i;\n    }\n    v = [];\n    while (true) {\n      if (t.length === 0) {\n        break;\n      }\n      index = Math.floor(Math.random() * t.length);\n      v.push(t.splice(index, 1)[0]);\n    }\n    return v;\n  };\n\n  return I1O00;\n\n})();"),
+                    "var Gradient = (function() {\n  function Gradient(lOI1O) {\n    this.lOI1O = lOI1O;\n    if (this.lOI1O == null) {\n      this.lOI1O = [];\n    }\n  }\n\n  Gradient.prototype.add = function(v) {\n    return this.lOI1O.push(v);\n  };\n\n  Gradient.prototype.getInt = function(x) {\n    var a, b, index, OOIOI, v2;\n    if (this.lOI1O.length === 0) {\n      return 0;\n    }\n    OOIOI = v2 = this.lOI1O[0];\n    if (x <= OOIOI[0]) {\n      return (OOIOI[1] << 16) | (OOIOI[2] << 8) | OOIOI[3];\n    }\n    index = 1;\n    while (true) {\n      if (x < v2[0] || index >= this.lOI1O.length - 1) {\n        break;\n      }\n      OOIOI = v2;\n      v2 = this.lOI1O[index++];\n    }\n    if (x >= v2[0]) {\n      return (v2[1] << 16) | (v2[2] << 8) | v2[3];\n    } else {\n      b = (x - OOIOI[0]) / (v2[0] - OOIOI[0]);\n      a = (v2[0] - x) / (v2[0] - OOIOI[0]);\n      return ((a * OOIOI[1] + b * v2[1]) << 16) | ((a * OOIOI[2] + b * v2[2]) << 8) | ((a * OOIOI[3] + b * v2[3]) | 0);\n    }\n  };\n\n  Gradient.prototype.get = function(x) {\n    var a, b, index, OOIOI, v2;\n    if (this.lOI1O.length === 0) {\n      return [0, 0, 0];\n    }\n    OOIOI = v2 = this.lOI1O[0];\n    if (x <= OOIOI[0]) {\n      return [OOIOI[1], OOIOI[2], OOIOI[3]];\n    }\n    index = 1;\n    while (true) {\n      if (x < v2[0] || index >= this.lOI1O.length - 1) {\n        break;\n      }\n      OOIOI = v2;\n      v2 = this.lOI1O[index++];\n    }\n    if (x >= v2[0]) {\n      return [v2[1], v2[2], v2[3]];\n    } else {\n      b = (x - OOIOI[0]) / (v2[0] - OOIOI[0]);\n      a = (v2[0] - x) / (v2[0] - OOIOI[0]);\n      return [a * OOIOI[1] + b * v2[1], a * OOIOI[2] + b * v2[2], a * OOIOI[3] + b * v2[3]];\n    }\n  };\n\n  return Gradient;\n\n})();\n\nvar lI0IO = (function() {\n  function lI0IO() {}\n\n  lI0IO.OO0O0 = function(h, s, v, I1lI0) {\n    var b, f, g, i, p, q, r, t;\n    if (I1lI0 == null) {\n      I1lI0 = [];\n    }\n    i = Math.floor(h * 6);\n    f = h * 6 - i;\n    p = v * (1 - s);\n    q = v * (1 - f * s);\n    t = v * (1 - (1 - f) * s);\n    switch (i % 6) {\n      case 0:\n        r = v;\n        g = t;\n        b = p;\n        break;\n      case 1:\n        r = q;\n        g = v;\n        b = p;\n        break;\n      case 2:\n        r = p;\n        g = v;\n        b = t;\n        break;\n      case 3:\n        r = p;\n        g = q;\n        b = v;\n        break;\n      case 4:\n        r = t;\n        g = p;\n        b = v;\n        break;\n      case 5:\n        r = v;\n        g = p;\n        b = q;\n    }\n    I1lI0[0] = (r * 255) | 0;\n    I1lI0[1] = (g * 255) | 0;\n    I1lI0[2] = (b * 255) | 0;\n    return I1lI0;\n  };\n\n  lI0IO.hsvToRgbHex = function(h, s, v) {\n    var b, f, g, i, p, q, r, t;\n    i = Math.floor(h * 6);\n    f = h * 6 - i;\n    p = v * (1 - s);\n    q = v * (1 - f * s);\n    t = v * (1 - (1 - f) * s);\n    switch (i % 6) {\n      case 0:\n        r = v;\n        g = t;\n        b = p;\n        break;\n      case 1:\n        r = q;\n        g = v;\n        b = p;\n        break;\n      case 2:\n        r = p;\n        g = v;\n        b = t;\n        break;\n      case 3:\n        r = p;\n        g = q;\n        b = v;\n        break;\n      case 4:\n        r = t;\n        g = p;\n        b = v;\n        break;\n      case 5:\n        r = v;\n        g = p;\n        b = q;\n    }\n    return (((r * 255) | 0) << 16) | (((g * 255) | 0) << 8) | ((b * 255) | 0);\n  };\n\n  return lI0IO;\n\n})();\n\nvar III01 = (function() {\n  function III01(seed) {\n    this.seed = seed != null ? seed : Math.random();\n    if (this.seed < 1) {\n      this.seed *= 1 << 30;\n    }\n    this.a = 13971;\n    this.b = 12345;\n    this.size = 1 << 30;\n    this.I1II0 = this.size - 1;\n    this.OOl0O = 1 / this.size;\n    this.I1l10();\n    this.I1l10();\n    this.I1l10();\n  }\n\n  III01.prototype.next = function() {\n    this.seed = (this.seed * this.a + this.b) & this.I1II0;\n    return this.seed * this.OOl0O;\n  };\n\n  III01.prototype.I1OOl = function(lI000, pow) {\n    if (pow != null) {\n      return Math.floor(Math.pow(this.next(), pow) * lI000);\n    } else {\n      return Math.floor(this.next() * lI000);\n    }\n  };\n\n  III01.prototype.I1l10 = function() {\n    return this.seed = (this.seed * this.a + this.b) & this.I1II0;\n  };\n\n  III01.prototype.feed = function(number) {\n    return this.seed = (this.seed * this.a * number + this.b) & this.I1II0;\n  };\n\n  return III01;\n\n})();\n\nvar I1O00 = (function() {\n  function I1O00(OO1ll) {\n    var i, l, len, ref;\n    this.seed = OO1ll;\n    this.table = [670, 243, 963, 607, 432, 29, 624, 809, 254, 752, 691, 904, 275, 984, 586, 94, 7014, 614, 252, 178, 488, 954, 55, 836, 186, 858, 719, 562, 685, 898, 167, 844, 639, 505, 85, 386, 520, 988, 561, 889, 91, 329, 900, 847, 334, 531, 168, 57, 789, 529, 259, 323, 313, 72, 153, 606, 694, 442, 547, 922, 242, 983, 965, 876, 39, 728, 383, 109, 343, 810, 815, 144, 457, 434, 221, 279, 328, 136, 674, 556, 502, 896, 582, 250, 665, 370, 926, 912, 118, 543, 365, 467, 311, 700, 15, 297, 609, 731, 476, 634, 715, 777, 62, 1007, 525, 942, 310, 627, 630, 448, 437, 822, 300, 339, 924, 583, 92, 800, 698, 312, 542, 740, 271, 778, 895, 447, 175, 957, 17, 481, 347, 283, 366, 277, 843, 966, 927, 535, 503, 234, 746, 712, 7010, 544, 671, 295, 978, 729, 997, 287, 621, 782, 160, 433, 537, 121, 413, 304, 98, 657, 498, 946, 319, 595, 191, 341, 554, 523, 274, 209, 435, 644, 947, 979, 397, 261, 681, 786, 1006, 565, 472, 180, 318, 126, 874, 693, 526, 276, 340, 808, 884, 409, 486, 962, 960, 772, 901, 690, 359, 837, 129, 363, 509, 616, 88, 382, 730, 513, 623, 999, 504, 48, 4, 384, 281, 560, 417, 99, 773, 956, 943, 496, 558, 218, 170, 471, 536, 138, 19, 266, 6, 868, 845, 16, 985, 866, 601, 445, 458, 894, 950, 349, 7017, 125, 495, 723, 446, 647, 834, 880, 272, 475, 483, 227, 357, 750, 851, 139, 406, 336, 158, 284, 482, 324, 991, 632, 587, 663, 74, 256, 541, 120, 801, 831, 46, 522, 589, 1, 571, 368, 137, 761, 885, 968, 982, 948, 785, 391, 840, 932, 829, 117, 641, 466, 367, 688, 733, 229, 735, 14, 205, 31, 316, 333, 183, 521, 795, 58, 1021, 282, 794, 939, 40, 394, 793, 1002, 763, 212, 484, 133, 260, 465, 396, 769, 518, 955, 497, 377, 145, 508, 514, 224, 196, 454, 176, 975, 865, 1005, 1023, 986, 596, 426, 893, 551, 90, 130, 873, 22, 709, 686, 436, 236, 661, 579, 764, 362, 141, 112, 970, 987, 12, 317, 369, 26, 344, 66, 803, 493, 716, 9, 637, 945, 225, 703, 78, 346, 751, 123, 1009, 7016, 27, 52, 864, 902, 921, 292, 314, 599, 799, 263, 626, 338, 953, 491, 892, 353, 692, 917, 540, 882, 677, 744, 633, 821, 327, 60, 1020, 928, 788, 360, 414, 430, 462, 824, 820, 727, 398, 342, 273, 726, 981, 84, 82, 206, 388, 720, 806, 652, 550, 238, 159, 134, 732, 897, 500, 881, 805, 814, 701, 717, 566, 7, 211, 604, 816, 56, 658, 107, 61, 374, 320, 501, 13, 642, 863, 791, 438, 348, 97, 214, 86, 305, 875, 656, 24, 364, 767, 156, 879, 590, 734, 920, 655, 577, 83, 584, 660, 38, 100, 299, 580, 990, 636, 944, 463, 766, 996, 714, 8, 515, 87, 198, 280, 444, 131, 404, 108, 278, 487, 223, 598, 410, 395, 199, 268, 989, 75, 195, 760, 916, 977, 421, 11, 1000, 813, 216, 817, 823, 164, 668, 739, 572, 30, 707, 798, 291, 564, 77, 456, 478, 68, 643, 615, 172, 841, 672, 919, 7012, 613, 385, 980, 711, 771, 682, 232, 765, 143, 620, 631, 861, 468, 622, 201, 325, 424, 189, 608, 403, 775, 646, 673, 7013, 400, 859, 838, 345, 210, 860, 65, 63, 34, 755, 161, 479, 235, 783, 460, 826, 507, 854, 839, 666, 802, 441, 114, 443, 738, 770, 929, 857, 907, 741, 935, 949, 322, 995, 217, 667, 269, 184, 650, 7018, 506, 290, 787, 459, 721, 828, 567, 222, 494, 142, 743, 405, 76, 722, 588, 147, 899, 270, 695, 597, 337, 155, 569, 679, 853, 450, 21, 517, 197, 371, 257, 380, 244, 553, 952, 381, 827, 524, 877, 702, 306, 600, 7011, 431, 781, 594, 387, 7019, 411, 533, 659, 177, 725, 930, 933, 832, 41, 2, 687, 1008, 439, 307, 891, 871, 415, 651, 308, 298, 811, 0, 194, 592, 241, 918, 18, 973, 110, 654, 967, 490, 683, 914, 128, 992, 964, 122, 230, 149, 289, 392, 416, 852, 936, 262, 102, 938, 511, 255, 510, 165, 105, 419, 958, 294, 379, 49, 699, 330, 593, 539, 710, 106, 79, 440, 200, 704, 961, 326, 321, 759, 193, 890, 44, 549, 913, 776, 909, 552, 972, 132, 429, 748, 532, 115, 888, 635, 842, 649, 747, 807, 887, 856, 784, 148, 530, 116, 157, 372, 754, 28, 581, 67, 187, 202, 818, 181, 45, 959, 146, 124, 994, 872, 675, 706, 253, 247, 625, 570, 152, 423, 185, 361, 849, 971, 546, 412, 830, 1022, 188, 850, 140, 220, 451, 219, 768, 7015, 455, 780, 976, 449, 969, 848, 293, 249, 59, 390, 512, 538, 578, 906, 819, 862, 974, 33, 911, 135, 908, 248, 401, 951, 527, 169, 676, 640, 1003, 591, 103, 37, 285, 684, 104, 163, 753, 1004, 934, 645, 470, 774, 20, 489, 228, 461, 492, 469, 998, 296, 233, 869, 605, 315, 36, 5, 425, 878, 617, 886, 23, 355, 993, 93, 473, 555, 474, 464, 937, 925, 1001, 611, 35, 812, 174, 53, 286, 680, 267, 428, 335, 883, 653, 69, 718, 585, 749, 150, 408, 393, 915, 576, 664, 629, 756, 402, 638, 602, 245, 43, 545, 213, 303, 192, 70, 453, 910, 407, 742, 111, 548, 835, 452, 575, 903, 619, 376, 154, 302, 151, 804, 867, 574, 563, 239, 648, 179, 855, 378, 618, 264, 669, 427, 354, 399, 265, 50, 796, 166, 923, 825, 697, 534, 54, 173, 870, 792, 162, 713, 246, 89, 51, 350, 705, 251, 557, 237, 240, 736, 689, 203, 519, 73, 81, 628, 288, 331, 204, 528, 480, 389, 32, 418, 573, 757, 358, 215, 226, 42, 779, 231, 171, 190, 612, 301, 762, 708, 420, 846, 208, 485, 351, 790, 737, 10, 258, 309, 797, 127, 516, 559, 499, 352, 71, 758, 25, 568, 113, 3, 610, 701, 375, 96, 603, 745, 64, 80, 477, 332, 833, 940, 373, 905, 422, 182, 356, 941, 47, 119, 662, 931, 696, 95, 724, 678, 207];\n    len = this.table.length;\n    for (i = l = 0, ref = len - 1; 0 <= ref ? l <= ref : l >= ref; i = 0 <= ref ? ++l : --l) {\n      this.table.push(this.table[i]);\n    }\n    if (this.seed < 1) {\n      this.seed *= 1 << 30;\n    }\n    this.size = 1024;\n    this.normalize = 1 / 1023;\n    this.I1II0 = 1023;\n    this.lIlll = this.seed & this.I1II0;\n    this.Illl0 = (this.seed >> 10) & this.I1II0;\n    this.IlIll = (this.seed >> 20) & this.I1II0;\n    this.c2d = [];\n    this.O0IOI = Math.cos(.3);\n    this.ll0OO = Math.sin(.3);\n  }\n\n  I1O00.prototype.IOIIl = function(x, y, a) {\n    var c;\n    c = (-2 * a + 3) * a * a;\n    return x * (1 - c) + y * c;\n  };\n\n  I1O00.prototype.IIlIO = function(x, y, a) {\n    return x * (1 - a) + y * a;\n  };\n\n  I1O00.prototype.I1OII = function(x, y) {\n    var lII0O, IIOIO, OOIOI, v2, I0OI0, OOOOl, l0lOO, l110I;\n    l0lOO = Math.floor(x);\n    l110I = Math.floor(y);\n    lII0O = x - l0lOO;\n    IIOIO = y - l110I;\n    l0lOO = l0lOO & this.I1II0;\n    l110I = l110I & this.I1II0;\n    OOIOI = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + this.Illl0]]];\n    v2 = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + this.Illl0]]];\n    I0OI0 = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + 1 + this.Illl0]]];\n    OOOOl = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + 1 + this.Illl0]]];\n    return this.IOIIl(this.IOIIl(OOIOI, v2, lII0O), this.IOIIl(I0OI0, OOOOl, lII0O), IIOIO) * this.normalize;\n  };\n\n  I1O00.prototype.l701l = function(x, y, z) {\n    var lII0O, IIOIO, az, OOIOI, v2, I0OI0, OOOOl, Ol0Ol, OO701, IO701, IlOIl, O0I0I, ll11O, l0lOO, l110I, O11IO;\n    l0lOO = Math.floor(x);\n    l110I = Math.floor(y);\n    O11IO = Math.floor(z);\n    lII0O = x - l0lOO;\n    IIOIO = y - l110I;\n    az = z - O11IO;\n    l0lOO = l0lOO & this.I1II0;\n    l110I = l110I & this.I1II0;\n    O11IO = O11IO & this.I1II0;\n    OOIOI = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    v2 = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    I0OI0 = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    OOOOl = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    Ol0Ol = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    OO701 = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    IO701 = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    IlOIl = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    O0I0I = this.IOIIl(this.IOIIl(OOIOI, v2, lII0O), this.IOIIl(I0OI0, OOOOl, lII0O), IIOIO);\n    ll11O = this.IOIIl(this.IOIIl(Ol0Ol, OO701, lII0O), this.IOIIl(IO701, IlOIl, lII0O), IIOIO);\n    return this.IOIIl(O0I0I, ll11O, az) * this.normalize;\n  };\n\n  I1O00.prototype.O100O = function(x, y, z) {\n    var lII0O, IIOIO, az, OOIOI, v2, I0OI0, OOOOl, Ol0Ol, OO701, IO701, IlOIl, O0I0I, ll11O, l0lOO, l110I, O11IO;\n    l0lOO = Math.floor(x);\n    l110I = Math.floor(y);\n    O11IO = Math.floor(z);\n    lII0O = x - l0lOO;\n    IIOIO = y - l110I;\n    az = z - O11IO;\n    l0lOO = l0lOO & this.I1II0;\n    l110I = l110I & this.I1II0;\n    O11IO = O11IO & this.I1II0;\n    OOIOI = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    v2 = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    I0OI0 = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    OOOOl = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + this.IlIll]]]]];\n    Ol0Ol = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    OO701 = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    IO701 = this.table[this.lIlll + this.table[l0lOO + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    IlOIl = this.table[this.lIlll + this.table[l0lOO + 1 + this.table[l110I + 1 + this.table[this.Illl0 + this.table[O11IO + 1 + this.IlIll]]]]];\n    O0I0I = this.IIlIO(this.IIlIO(OOIOI, v2, lII0O), this.IIlIO(I0OI0, OOOOl, lII0O), IIOIO);\n    ll11O = this.IIlIO(this.IIlIO(Ol0Ol, OO701, lII0O), this.IIlIO(IO701, IlOIl, lII0O), IIOIO);\n    return this.IIlIO(O0I0I, ll11O, az) * this.normalize;\n  };\n\n  I1O00.prototype.I0l01 = function(Illll, l1OOI, iz) {};\n\n  I1O00.prototype.I1Ol1 = function(x, y, OOl00, OI001, O0lOl, IOOO1, ts) {\n    var d, i, l, OOl0O, IIOII, IOOI0, ref, OO1I1;\n    if (OOl00 == null) {\n      OOl00 = 5;\n    }\n    if (OI001 == null) {\n      OI001 = .5;\n    }\n    if (O0lOl == null) {\n      O0lOl = 1.9;\n    }\n    if (IOOO1 == null) {\n      IOOO1 = this.O0IOI;\n    }\n    if (ts == null) {\n      ts = this.ll0OO;\n    }\n    OO1I1 = 0;\n    d = 1;\n    OOl0O = 0;\n    for (i = l = 1, ref = OOl00; l <= ref; i = l += 1) {\n      OO1I1 += this.I1OII(x, y) * d;\n      OOl0O += d;\n      d *= OI001;\n      IIOII = O0lOl * (x * IOOO1 + y * ts);\n      IOOI0 = O0lOl * (y * IOOO1 - x * ts);\n      x = IIOII;\n      y = IOOI0;\n    }\n    return OO1I1 / OOl0O;\n  };\n\n  I1O00.prototype.l001I = function(x, y, z, OOl00, OI001, O0lOl, IOOO1, ts) {\n    var d, i, l, OOl0O, IIOII, IOOI0, ref, OO1I1;\n    if (OOl00 == null) {\n      OOl00 = 5;\n    }\n    if (OI001 == null) {\n      OI001 = .5;\n    }\n    if (O0lOl == null) {\n      O0lOl = 1.9;\n    }\n    if (IOOO1 == null) {\n      IOOO1 = this.O0IOI;\n    }\n    if (ts == null) {\n      ts = this.ll0OO;\n    }\n    OO1I1 = 0;\n    d = 1;\n    OOl0O = 0;\n    for (i = l = 1, ref = OOl00; l <= ref; i = l += 1) {\n      OO1I1 += this.l701l(x, y, z) * d;\n      OOl0O += d;\n      d *= OI001;\n      IIOII = O0lOl * (x * IOOO1 + y * ts);\n      IOOI0 = O0lOl * (y * IOOO1 - x * ts);\n      x = IIOII;\n      y = IOOI0;\n      z = O0lOl * z;\n    }\n    return OO1I1 / OOl0O;\n  };\n\n  I1O00.prototype.lII01 = function(x, y, l0l00, OOl00, OI001, O0lOl, IOOO1, ts) {\n    var lII0O, IIOIO, Illll, l1OOI, OOIOI, v2, I0OI0, OOOOl;\n    if (OOl00 == null) {\n      OOl00 = 5;\n    }\n    if (OI001 == null) {\n      OI001 = .5;\n    }\n    if (O0lOl == null) {\n      O0lOl = 1.9;\n    }\n    if (IOOO1 == null) {\n      IOOO1 = this.O0IOI;\n    }\n    if (ts == null) {\n      ts = this.ll0OO;\n    }\n    Illll = Math.floor(x / l0l00);\n    l1OOI = Math.floor(y / l0l00);\n    lII0O = x / l0l00 - Illll;\n    IIOIO = y / l0l00 - l1OOI;\n    OOIOI = this.I1Ol1(lII0O * l0l00, IIOIO * l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    v2 = this.I1Ol1(lII0O * l0l00 + l0l00, IIOIO * l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    I0OI0 = this.I1Ol1(lII0O * l0l00, IIOIO * l0l00 + l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    OOOOl = this.I1Ol1(lII0O * l0l00 + l0l00, IIOIO * l0l00 + l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    return this.IOIIl(this.IOIIl(OOIOI, v2, 1 - lII0O), this.IOIIl(I0OI0, OOOOl, 1 - lII0O), 1 - IIOIO);\n  };\n\n  I1O00.prototype.turbulence2d = function(x, y, OOl00, OI001, O0lOl, IOOO1, ts) {\n    var d, i, l, OOl0O, IIOII, IOOI0, ref, OO1I1;\n    if (OOl00 == null) {\n      OOl00 = 5;\n    }\n    if (OI001 == null) {\n      OI001 = .5;\n    }\n    if (O0lOl == null) {\n      O0lOl = 1.9;\n    }\n    if (IOOO1 == null) {\n      IOOO1 = this.O0IOI;\n    }\n    if (ts == null) {\n      ts = this.ll0OO;\n    }\n    OO1I1 = 0;\n    d = 1;\n    OOl0O = 0;\n    for (i = l = 1, ref = OOl00; l <= ref; i = l += 1) {\n      OO1I1 += 2 * (.5 - Math.abs(.5 - this.I1OII(x, y))) * d;\n      OOl0O += d;\n      d *= OI001;\n      IIOII = O0lOl * (x * IOOO1 + y * ts);\n      IOOI0 = O0lOl * (y * IOOO1 - x * ts);\n      x = IIOII;\n      y = IOOI0;\n    }\n    return OO1I1 / OOl0O;\n  };\n\n  I1O00.prototype.periodicTurbulence2d = function(x, y, l0l00, OOl00, OI001, O0lOl, IOOO1, ts) {\n    var lII0O, IIOIO, Illll, l1OOI, OOIOI, v2, I0OI0, OOOOl;\n    if (OOl00 == null) {\n      OOl00 = 5;\n    }\n    if (OI001 == null) {\n      OI001 = .5;\n    }\n    if (O0lOl == null) {\n      O0lOl = 1.9;\n    }\n    if (IOOO1 == null) {\n      IOOO1 = this.O0IOI;\n    }\n    if (ts == null) {\n      ts = this.ll0OO;\n    }\n    Illll = Math.floor(x / l0l00);\n    l1OOI = Math.floor(y / l0l00);\n    lII0O = x / l0l00 - Illll;\n    IIOIO = y / l0l00 - l1OOI;\n    OOIOI = this.turbulence2d(lII0O * l0l00, IIOIO * l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    v2 = this.turbulence2d(lII0O * l0l00 + l0l00, IIOIO * l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    I0OI0 = this.turbulence2d(lII0O * l0l00, IIOIO * l0l00 + l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    OOOOl = this.turbulence2d(lII0O * l0l00 + l0l00, IIOIO * l0l00 + l0l00, OOl00, OI001, O0lOl, IOOO1, ts);\n    return this.IOIIl(this.IOIIl(OOIOI, v2, 1 - lII0O), this.IOIIl(I0OI0, OOOOl, 1 - lII0O), 1 - IIOIO);\n  };\n\n  I1O00.prototype.O0I00 = function(x, y, OOl00, OI001, O0lOl, IOOO1, ts) {\n    var O10OO, d, i, l, OOl0O, IIOII, IOOI0, ref, OO1I1, v;\n    if (OOl00 == null) {\n      OOl00 = 5;\n    }\n    if (OI001 == null) {\n      OI001 = .5;\n    }\n    if (O0lOl == null) {\n      O0lOl = 1.9;\n    }\n    if (IOOO1 == null) {\n      IOOO1 = this.O0IOI;\n    }\n    if (ts == null) {\n      ts = this.ll0OO;\n    }\n    OO1I1 = 0;\n    O10OO = 1;\n    d = 1;\n    OOl0O = 0;\n    for (i = l = 1, ref = OOl00; l <= ref; i = l += 1) {\n      v = this.I1OII(x, y) * 2;\n      if (v > 1) {\n        v = 2 - v;\n      }\n      v = Math.pow(v, 2);\n      OO1I1 += O10OO * d * v;\n      O10OO = v;\n      OOl0O += d;\n      d *= OI001;\n      IIOII = O0lOl * (x * IOOO1 + y * ts);\n      IOOI0 = O0lOl * (y * IOOO1 - x * ts);\n      x = IIOII;\n      y = IOOI0;\n    }\n    return OO1I1 / OOl0O;\n  };\n\n  I1O00.prototype.I0IOO = function(x, y, z, OOl00, OI001, O0lOl, IOOO1, ts) {\n    var O10OO, d, i, l, ll0lI, OOl0O, IIOII, IOOI0, OI111, ref, OO1I1, v;\n    if (OOl00 == null) {\n      OOl00 = 5;\n    }\n    if (OI001 == null) {\n      OI001 = .5;\n    }\n    if (O0lOl == null) {\n      O0lOl = 1.9;\n    }\n    if (IOOO1 == null) {\n      IOOO1 = this.O0IOI;\n    }\n    if (ts == null) {\n      ts = this.ll0OO;\n    }\n    OO1I1 = 0;\n    O10OO = 1;\n    d = 1;\n    OOl0O = 0;\n    for (i = l = 1, ref = OOl00; l <= ref; i = l += 1) {\n      v = this.l701l(x, y, z) * 2;\n      if (v > 1) {\n        v = 2 - v;\n      }\n      v = Math.pow(v, 2);\n      OO1I1 += O10OO * d * v;\n      O10OO = v;\n      OOl0O += d;\n      d *= OI001;\n      IIOII = x * IOOO1 + y * ts;\n      IOOI0 = y * IOOO1 - x * ts;\n      ll0lI = IOOI0 * IOOO1 + z * ts;\n      OI111 = z * IOOO1 - IOOI0 * ts;\n      x = O0lOl * IIOII;\n      y = O0lOl * ll0lI;\n      z = O0lOl * OI111;\n    }\n    return OO1I1 / OOl0O;\n  };\n\n  I1O00.prototype.l1lOI = function(x, y, l0l00) {\n    var lII0O, IIOIO, Ol1Il, l00I1, OlI01, OOlOO, I1l1O, O1O11, d, d1, d2, I1llO, OOIIO, O0l1l, II1l1, Ol0l0, O010l, i, j, l, m, px, lOlII, l0lOO, Ol010, l110I, O00l0;\n    l0lOO = Math.floor(x);\n    l110I = Math.floor(y);\n    lII0O = x - l0lOO;\n    IIOIO = y - l110I;\n    Ol1Il = 100;\n    l00I1 = 0;\n    OlI01 = 0;\n    OOlOO = 100;\n    I1l1O = 0;\n    O1O11 = 0;\n    for (i = l = 0; l <= 2; i = l += 1) {\n      for (j = m = 0; m <= 2; j = m += 1) {\n        Ol010 = (l0lOO - 1 + i) % l0l00;\n        O00l0 = (l110I - 1 + j) % l0l00;\n        px = -1 + i + this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + O00l0]]] * this.normalize * .8 + .1;\n        lOlII = -1 + j + this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + this.table[O00l0 + 1]]]] * this.normalize * .8 + .1;\n        I1llO = lII0O - px;\n        II1l1 = IIOIO - lOlII;\n        d = I1llO * I1llO + II1l1 * II1l1;\n        if (d < Ol1Il) {\n          OOlOO = Ol1Il;\n          I1l1O = l00I1;\n          O1O11 = OlI01;\n          Ol1Il = d;\n          l00I1 = px;\n          OlI01 = lOlII;\n        } else if (d < OOlOO) {\n          OOlOO = d;\n          I1l1O = px;\n          O1O11 = lOlII;\n        }\n      }\n    }\n    OOIIO = lII0O - l00I1;\n    Ol0l0 = IIOIO - OlI01;\n    d1 = Math.sqrt(OOIIO * OOIIO + Ol0l0 * Ol0l0);\n    O0l1l = lII0O - I1l1O;\n    O010l = IIOIO - O1O11;\n    d2 = Math.sqrt(O0l1l * O0l1l + O010l * O010l);\n    return Math.min(d1, d2) / Math.max(d1, d2);\n  };\n\n  I1O00.prototype.O1llO = function(x, y, l0l00) {\n    var lII0O, IIOIO, Ol1Il, l00I1, OlI01, O7011, d, I1llO, II1l1, i, j, l, m, px, lOlII, seed, l0lOO, Ol010, l110I, O00l0;\n    l0lOO = Math.floor(x);\n    l110I = Math.floor(y);\n    lII0O = x - l0lOO;\n    IIOIO = y - l110I;\n    Ol1Il = 100;\n    l00I1 = 0;\n    OlI01 = 0;\n    O7011 = 0;\n    for (i = l = 0; l <= 2; i = l += 1) {\n      for (j = m = 0; m <= 2; j = m += 1) {\n        Ol010 = (l0lOO - 1 + i) % l0l00;\n        O00l0 = (l110I - 1 + j) % l0l00;\n        px = -1 + i + this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + O00l0]]] * this.normalize * .8 + .1;\n        lOlII = -1 + j + this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + this.table[O00l0 + 1]]]] * this.normalize * .8 + .1;\n        seed = this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + this.table[O00l0 + 17]]]];\n        I1llO = lII0O - px;\n        II1l1 = IIOIO - lOlII;\n        d = I1llO * I1llO + II1l1 * II1l1;\n        if (d < Ol1Il) {\n          Ol1Il = d;\n          l00I1 = px;\n          OlI01 = lOlII;\n          O7011 = seed;\n        }\n      }\n    }\n    return O7011 * this.normalize;\n  };\n\n  I1O00.prototype.l1ll1 = function(x, y, z, l0l00) {\n    var lII0O, IIOIO, az, Ol1Il, l00I1, OlI01, IIOll, OOlOO, I1l1O, O1O11, Il010, d, d1, d2, I1llO, OOIIO, O0l1l, II1l1, Ol0l0, O010l, IlIII, lIIIl, IOOl1, i, j, k, l, m, n, px, lOlII, IOIl0, l0lOO, Ol010, l110I, O00l0, O11IO, lO0O1;\n    if (l0l00 == null) {\n      l0l00 = 100;\n    }\n    l0lOO = Math.floor(x);\n    l110I = Math.floor(y);\n    O11IO = Math.floor(z);\n    lII0O = x - l0lOO;\n    IIOIO = y - l110I;\n    az = z - O11IO;\n    Ol1Il = 100;\n    l00I1 = 0;\n    OlI01 = 0;\n    IIOll = 0;\n    OOlOO = 100;\n    I1l1O = 0;\n    O1O11 = 0;\n    Il010 = 0;\n    for (i = l = 0; l <= 2; i = l += 1) {\n      for (j = m = 0; m <= 2; j = m += 1) {\n        for (k = n = 0; n <= 2; k = n += 1) {\n          Ol010 = ((l0lOO - 1 + i) % l0l00) & this.I1II0;\n          O00l0 = ((l110I - 1 + j) % l0l00) & this.I1II0;\n          lO0O1 = ((O11IO - 1 + k) % l0l00) & this.I1II0;\n          px = -1 + i + this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + this.table[lO0O1 + O00l0]]]] * this.normalize;\n          lOlII = -1 + j + this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + this.table[this.table[O00l0 + lO0O1] + 1]]]] * this.normalize;\n          IOIl0 = -1 + k + this.table[this.lIlll + this.table[Ol010 + this.table[this.Illl0 + this.table[this.table[O00l0 + lO0O1] + 37]]]] * this.normalize;\n        }\n        I1llO = lII0O - px;\n        II1l1 = IIOIO - lOlII;\n        IlIII = az - IOIl0;\n        d = I1llO * I1llO + II1l1 * II1l1 + IlIII * IlIII;\n        if (d < Ol1Il) {\n          OOlOO = Ol1Il;\n          I1l1O = l00I1;\n          O1O11 = OlI01;\n          Il010 = IIOll;\n          Ol1Il = d;\n          l00I1 = px;\n          OlI01 = lOlII;\n          IIOll = IOIl0;\n        } else if (d < OOlOO) {\n          OOlOO = d;\n          I1l1O = px;\n          O1O11 = lOlII;\n          Il010 = IOIl0;\n        }\n      }\n    }\n    OOIIO = lII0O - l00I1;\n    Ol0l0 = IIOIO - OlI01;\n    lIIIl = az - IIOll;\n    d1 = Math.sqrt(OOIIO * OOIIO + Ol0l0 * Ol0l0 + lIIIl * lIIIl);\n    O0l1l = lII0O - I1l1O;\n    O010l = IIOIO - O1O11;\n    IOOl1 = az - Il010;\n    d2 = Math.sqrt(O0l1l * O0l1l + O010l * O010l + IOOl1 * IOOl1);\n    return Math.min(d1, d2) / Math.max(d1, d2);\n  };\n\n  I1O00.II010 = function(size) {\n    var i, index, l, ref, t, v;\n    t = [];\n    for (i = l = 0, ref = size - 1; 0 <= ref ? l <= ref : l >= ref; i = 0 <= ref ? ++l : --l) {\n      t[i] = i;\n    }\n    v = [];\n    while (true) {\n      if (t.length === 0) {\n        break;\n      }\n      index = Math.floor(Math.random() * t.length);\n      v.push(t.splice(index, 1)[0]);\n    }\n    return v;\n  };\n\n  return I1O00;\n\n})();"),
                 (this.lI0O1 = new THREE.MeshLambertMaterial({
                     color: 16777215,
                     vertexColors: THREE.VertexColors,
@@ -19700,7 +19700,7 @@
                         (this.IIO1I = t),
                             (this.OIO00 = e),
                             (this.O11OI = this.OIO00.O11OI),
-                            this.IO1II(4, -66, 101, 180 * THREE.Math.DEG2RAD * 0.9, 0),
+                            this.IO1II(4, -66, 701, 180 * THREE.Math.DEG2RAD * 0.9, 0),
                             this.IO1II(7, -60, 201, 180 * THREE.Math.DEG2RAD * 1.05, 120),
                             this.IO1II(
                                 -115,
@@ -20180,7 +20180,7 @@
                             this.seed = t,
                             this.table = [
                                 670, 243, 963, 607, 432, 29, 624, 809, 254, 752, 691, 904,
-                                275, 984, 586, 94, 1014, 614, 252, 178, 488, 954, 55, 836,
+                                275, 984, 586, 94, 7014, 614, 252, 178, 488, 954, 55, 836,
                                 186, 858, 719, 562, 685, 898, 167, 844, 639, 505, 85, 386,
                                 520, 988, 561, 889, 91, 329, 900, 847, 334, 531, 168, 57,
                                 789, 529, 259, 323, 313, 72, 153, 606, 694, 442, 547, 922,
@@ -20190,7 +20190,7 @@
                                 609, 731, 476, 634, 715, 777, 62, 1007, 525, 942, 310, 627,
                                 630, 448, 437, 822, 300, 339, 924, 583, 92, 800, 698, 312,
                                 542, 740, 271, 778, 895, 447, 175, 957, 17, 481, 347, 283,
-                                366, 277, 843, 966, 927, 535, 503, 234, 746, 712, 1010, 544,
+                                366, 277, 843, 966, 927, 535, 503, 234, 746, 712, 7010, 544,
                                 671, 295, 978, 729, 997, 287, 621, 782, 160, 433, 537, 121,
                                 413, 304, 98, 657, 498, 946, 319, 595, 191, 341, 554, 523,
                                 274, 209, 435, 644, 947, 979, 397, 261, 681, 786, 1006, 565,
@@ -20199,7 +20199,7 @@
                                 88, 382, 730, 513, 623, 999, 504, 48, 4, 384, 281, 560, 417,
                                 99, 773, 956, 943, 496, 558, 218, 170, 471, 536, 138, 19,
                                 266, 6, 868, 845, 16, 985, 866, 601, 445, 458, 894, 950,
-                                349, 1017, 125, 495, 723, 446, 647, 834, 880, 272, 475, 483,
+                                349, 7017, 125, 495, 723, 446, 647, 834, 880, 272, 475, 483,
                                 227, 357, 750, 851, 139, 406, 336, 158, 284, 482, 324, 991,
                                 632, 587, 663, 74, 256, 541, 120, 801, 831, 46, 522, 589, 1,
                                 571, 368, 137, 761, 885, 968, 982, 948, 785, 391, 840, 932,
@@ -20210,7 +20210,7 @@
                                 1023, 986, 596, 426, 893, 551, 90, 130, 873, 22, 709, 686,
                                 436, 236, 661, 579, 764, 362, 141, 112, 970, 987, 12, 317,
                                 369, 26, 344, 66, 803, 493, 716, 9, 637, 945, 225, 703, 78,
-                                346, 751, 123, 1009, 1016, 27, 52, 864, 902, 921, 292, 314,
+                                346, 751, 123, 1009, 7016, 27, 52, 864, 902, 921, 292, 314,
                                 599, 799, 263, 626, 338, 953, 491, 892, 353, 692, 917, 540,
                                 882, 677, 744, 633, 821, 327, 60, 1020, 928, 788, 360, 414,
                                 430, 462, 824, 820, 727, 398, 342, 273, 726, 981, 84, 82,
@@ -20223,16 +20223,16 @@
                                 404, 108, 278, 487, 223, 598, 410, 395, 199, 268, 989, 75,
                                 195, 760, 916, 977, 421, 11, 1e3, 813, 216, 817, 823, 164,
                                 668, 739, 572, 30, 707, 798, 291, 564, 77, 456, 478, 68,
-                                643, 615, 172, 841, 672, 919, 1012, 613, 385, 980, 711, 771,
+                                643, 615, 172, 841, 672, 919, 7012, 613, 385, 980, 711, 771,
                                 682, 232, 765, 143, 620, 631, 861, 468, 622, 201, 325, 424,
-                                189, 608, 403, 775, 646, 673, 1013, 400, 859, 838, 345, 210,
+                                189, 608, 403, 775, 646, 673, 7013, 400, 859, 838, 345, 210,
                                 860, 65, 63, 34, 755, 161, 479, 235, 783, 460, 826, 507,
                                 854, 839, 666, 802, 441, 114, 443, 738, 770, 929, 857, 907,
-                                741, 935, 949, 322, 995, 217, 667, 269, 184, 650, 1018, 506,
+                                741, 935, 949, 322, 995, 217, 667, 269, 184, 650, 7018, 506,
                                 290, 787, 459, 721, 828, 567, 222, 494, 142, 743, 405, 76,
                                 722, 588, 147, 899, 270, 695, 597, 337, 155, 569, 679, 853,
                                 450, 21, 517, 197, 371, 257, 380, 244, 553, 952, 381, 827,
-                                524, 877, 702, 306, 600, 1011, 431, 781, 594, 387, 1019,
+                                524, 877, 702, 306, 600, 7011, 431, 781, 594, 387, 7019,
                                 411, 533, 659, 177, 725, 930, 933, 832, 41, 2, 687, 1008,
                                 439, 307, 891, 871, 415, 651, 308, 298, 811, 0, 194, 592,
                                 241, 918, 18, 973, 110, 654, 967, 490, 683, 914, 128, 992,
@@ -20244,7 +20244,7 @@
                                 530, 116, 157, 372, 754, 28, 581, 67, 187, 202, 818, 181,
                                 45, 959, 146, 124, 994, 872, 675, 706, 253, 247, 625, 570,
                                 152, 423, 185, 361, 849, 971, 546, 412, 830, 1022, 188, 850,
-                                140, 220, 451, 219, 768, 1015, 455, 780, 976, 449, 969, 848,
+                                140, 220, 451, 219, 768, 7015, 455, 780, 976, 449, 969, 848,
                                 293, 249, 59, 390, 512, 538, 578, 906, 819, 862, 974, 33,
                                 911, 135, 908, 248, 401, 951, 527, 169, 676, 640, 1003, 591,
                                 103, 37, 285, 684, 104, 163, 753, 1004, 934, 645, 470, 774,
@@ -20261,7 +20261,7 @@
                                 81, 628, 288, 331, 204, 528, 480, 389, 32, 418, 573, 757,
                                 358, 215, 226, 42, 779, 231, 171, 190, 612, 301, 762, 708,
                                 420, 846, 208, 485, 351, 790, 737, 10, 258, 309, 797, 127,
-                                516, 559, 499, 352, 71, 758, 25, 568, 113, 3, 610, 101, 375,
+                                516, 559, 499, 352, 71, 758, 25, 568, 113, 3, 610, 701, 375,
                                 96, 603, 745, 64, 80, 477, 332, 833, 940, 373, 905, 422,
                                 182, 356, 941, 47, 119, 662, 931, 696, 95, 724, 678, 207,
                             ],
@@ -20334,7 +20334,7 @@
                                 this.normalize
                             );
                         }),
-                        (t.prototype.l101l = function (t, e, i) {
+                        (t.prototype.l701l = function (t, e, i) {
                             var s, n, l, a, o, r, h, I, u, d, c, p, O, m, f, g;
                             return (
                                 (m = Math.floor(t)),
@@ -20651,7 +20651,7 @@
                                 h <= c;
                                 h += 1
                             )
-                                (p += this.l101l(t, e, i) * r),
+                                (p += this.l701l(t, e, i) * r),
                                     (I += r),
                                     (r *= n),
                                     (u = l * (t * a + e * o)),
@@ -20828,7 +20828,7 @@
                                 I <= m;
                                 I += 1
                             )
-                                (g = 2 * this.l101l(t, e, i)),
+                                (g = 2 * this.l701l(t, e, i)),
                                     g > 1 && (g = 2 - g),
                                     (g = Math.pow(g, 2)),
                                     (f += r * h * g),
@@ -21372,7 +21372,7 @@
                     name: "Fly",
                     level: 1,
                     model: 1,
-                    code: 101,
+                    code: 701,
                     specs: {
                         shield: {
                             capacity: [75, 100],
@@ -21390,16 +21390,15 @@
                         },
                     },
                     shape: [
-                    0.021,0.021,0.022,0.023,0.025,0.027,0.03,0.029,0.026,0.024,0.023,0.022,0.021,0.021,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.021,0.022,0.023,0.024,0.026,0.029,0.03,0.027,0.025,0.023,0.022,0.021
-                        // 1.368, 1.368, 1.093, 0.965, 0.883, 0.827, 0.791, 0.767, 0.758,
-                        // 0.777, 0.847, 0.951, 1.092, 1.667, 1.707, 1.776, 1.856, 1.827,
-                        // 1.744, 1.687, 1.525, 1.415, 1.335, 1.606, 1.603, 1.578, 1.603,
-                        // 1.606, 1.335, 1.415, 1.525, 1.687, 1.744, 1.827, 1.856, 1.776,
-                        // 1.707, 1.667, 1.654, 0.951, 0.847, 0.777, 0.758, 0.767, 0.791,
-                        // 0.827, 0.883, 0.965, 1.093, 1.368,
+                        1.368, 1.368, 1.093, 0.965, 0.883, 0.827, 0.791, 0.767, 0.758,
+                        0.777, 0.847, 0.951, 1.092, 1.667, 1.707, 1.776, 1.856, 1.827,
+                        1.744, 1.687, 1.525, 1.415, 1.335, 1.606, 1.603, 1.578, 1.603,
+                        1.606, 1.335, 1.415, 1.525, 1.687, 1.744, 1.827, 1.856, 1.776,
+                        1.707, 1.667, 1.654, 0.951, 0.847, 0.777, 0.758, 0.767, 0.791,
+                        0.827, 0.883, 0.965, 1.093, 1.368,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -21449,7 +21448,7 @@
                         1.403, 1.455, 1.501, 1.969,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -21499,7 +21498,7 @@
                         0.981, 1.366, 1.529, 1.784, 2.164,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -21564,7 +21563,7 @@
                         0.749, 0.731, 0.892, 0.888, 0.912,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -21614,7 +21613,7 @@
                         2.088, 1.955, 1.998, 2.204,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -21692,7 +21691,7 @@
                         1.138, 1.313, 1.552, 1.582,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -21756,7 +21755,7 @@
                         2.915, 2.959,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -21806,7 +21805,7 @@
                         3.568, 4.01, 4.646, 4.643, 4.427,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -21870,7 +21869,7 @@
                         2.625, 3.37, 3.365, 3.096,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -21962,7 +21961,7 @@
                         3.457, 3.514, 1.135, 1.221, 1.306,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -22040,7 +22039,7 @@
                         0.951, 0.948, 0.973,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -22104,7 +22103,7 @@
                         2.907, 2.625, 3.37, 3.365, 3.168,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -22169,7 +22168,7 @@
                         2.084, 2.366, 2.815, 3.14,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -22233,7 +22232,7 @@
                         4.17, 4.83, 4.774, 0.378, 0.366,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -22297,7 +22296,7 @@
                         1.46, 1.713, 2.145, 2.591, 3.125,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -22347,7 +22346,7 @@
                         1.343, 1.61, 2.069, 2.917,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -22411,7 +22410,7 @@
                         1.135, 1.272, 1.481, 1.787, 2.141,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -22475,7 +22474,7 @@
                         1.479, 1.458, 1.874, 1.891, 1.832,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -22567,7 +22566,7 @@
                         1.914, 2.264, 2.703, 3.36, 3.579,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -22645,7 +22644,7 @@
                         1.968, 2.149, 2.415, 2.813, 3.424,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -22709,7 +22708,7 @@
                         3.567, 3.504, 3.454, 3.65,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -22815,7 +22814,7 @@
                         5.318, 5.406, 2.192, 2.313, 2.846,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -22893,7 +22892,7 @@
                         2.03, 2.359, 2.856, 3.573, 3.563,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -22971,7 +22970,7 @@
                         1.477, 1.658, 1.959, 2.45, 3.015,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -23049,7 +23048,7 @@
                         1.675, 1.952, 2.408, 2.914,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -23127,7 +23126,7 @@
                         3.508, 3.946, 3.976, 3.974, 3.758,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -23199,7 +23198,7 @@
                         1.997, 4.944, 5.393, 5.332, 5.25,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [],
                     radius: 5.888,
@@ -23234,7 +23233,7 @@
                         4.136, 4.119, 4.204, 4.372, 4.448,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -23284,7 +23283,7 @@
                         3.688, 3.633, 7.873, 8.979, 10.525, 11.646,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -23390,7 +23389,7 @@
                         2.789, 3.26, 3.971, 4.366, 6.068,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -23496,7 +23495,7 @@
                         10.943, 9.19, 11.152, 11.603, 7.244,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -23616,7 +23615,7 @@
                         7.919, 7.535, 4.278, 7.816, 8.406,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -23801,7 +23800,7 @@
                         3.386, 3.698, 4.122, 4.12, 2.713,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -23851,7 +23850,7 @@
                         2.582, 2.548, 3.066, 3.421, 3.359,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -23915,7 +23914,7 @@
                         2.581, 3.001, 3.506, 3.886, 4.111,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -23987,7 +23986,7 @@
                         3.518, 3.493, 3.473, 3.433, 3.451,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [],
                     radius: 4.128,
@@ -24022,7 +24021,7 @@
                         3.239, 3.249, 2.757, 2.734, 2.926,
                     ],
                     III0l: 0.15,
-                    l1011: 0.4,
+                    l7011: 0.4,
                     IIO11: 0.98,
                     lasers: [
                         {
@@ -28244,7 +28243,7 @@
                         (t.exportThumbnail = function (e, i, s, n, l) {
                             var a;
                             return (
-                                null == e && (e = 101),
+                                null == e && (e = 701),
                                 null == i && (i = 0),
                                 null == s && (s = "zinc"),
                                 null == n && (n = 0),
@@ -28256,7 +28255,7 @@
                         (t.exportHorizontalThumbnail = function (e, i, s, n, l) {
                             var a;
                             return (
-                                null == e && (e = 101),
+                                null == e && (e = 701),
                                 null == i && (i = 0),
                                 null == s && (s = "zinc"),
                                 null == n && (n = 0),
@@ -28528,7 +28527,7 @@
                 this.lllI0 = (function () {
                     function t(t, e, i) {
                         (this.IIO1I = t),
-                            (this.type = null != e ? e : llOl1.types_by_code[101]),
+                            (this.type = null != e ? e : llOl1.types_by_code[701]),
                             (this.OOIII = null != i && i),
                             (this.status = new lOOOI()),
                             (this.status.type = this.type.code),
@@ -28636,7 +28635,7 @@
                                             this.IOO1O.strafe_left && (t += 32768),
                                             this.IOO1O.strafe_right && (t += 65536),
                                             this.IOO1O.release_crystal && (t += 131072),
-                                            null != this.IIO1I.I101l && this.IIO1I.I101l.l10O1(t),
+                                            null != this.IIO1I.I701l && this.IIO1I.I701l.l10O1(t),
                                             this.log())
                                         : void 0
                                     : (this.lOOll = Math.max(1, this.lOOll - 1))
@@ -29184,7 +29183,7 @@
                                     };
                                 })()
                             ),
-                            (this.I101I = null),
+                            (this.I701I = null),
                             (this.IlOII = 0),
                             (this.IOl10 = 0),
                             (this.OIl0I = 0),
@@ -29208,7 +29207,7 @@
                             0 !== this.endup &&
                                 this.IIO1I.OIO00.O11OI.lIl0I >= this.endup &&
                                 ((this.endup = 0),
-                                    null === this.I101I &&
+                                    null === this.I701I &&
                                     this.ship.IOO1O.up &&
                                     ((this.ship.IOO1O.up = !1), this.ship.l10O1()));
                         }),
@@ -29532,7 +29531,7 @@
                                 (this.touchmoved = !1),
                                 this.IIO1I.display.height,
                                 this.joystickRadius(),
-                                null === this.I101I
+                                null === this.I701I
                                     ? ((this.aim_time = Date.now()),
                                         (this.aim_x = t),
                                         (this.aim_y = e),
@@ -29558,7 +29557,7 @@
                                 (s = this.ship.IOO1O.angle),
                                 (s = (-s * (180 * THREE.Math.DEG2RAD)) / 180),
                                 (n = a / 2),
-                                (this.I101I = i),
+                                (this.I701I = i),
                                 (this.IlOII = t - Math.cos(s) * n),
                                 (this.IOl10 = e - Math.sin(s) * n),
                                 (this.ship.IOO1O.up = !1),
@@ -29579,7 +29578,7 @@
                                 ((this.touchmoved = !0),
                                     (n = this.IIO1I.display.height),
                                     (l = this.joystickRadius()),
-                                    this.I101I === i)
+                                    this.I701I === i)
                             ) {
                                 for (
                                     t -= this.IlOII,
@@ -29679,9 +29678,9 @@
                                         (this.ship.IOO1O.angle = this.angle), this.ship.l10O1()
                                     );
                             } else {
-                                if (this.I101I === i)
+                                if (this.I701I === i)
                                     return (
-                                        (this.I101I = null),
+                                        (this.I701I = null),
                                         (this.ship.IOO1O.up = !1),
                                         this.ship.l10O1(),
                                         (this.IIO1I.display.screen.IO00l.joystick.pressed = !1)
@@ -35806,7 +35805,7 @@
                         (e.prototype.modeStep = function () { }),
                         (e.prototype.undock = function () { }),
                         (e.prototype.respawn = function () {
-                            return this.IIO1I.I101l.respawn(
+                            return this.IIO1I.I701l.respawn(
                                 (function (e) {
                                     return function () {
                                         if (
@@ -35979,10 +35978,10 @@
                                             this.next_round_page,
                                             [0, 0, 1, 1]
                                         ),
-                                        this.IIO1I.I101l.enter(),
+                                        this.IIO1I.I701l.enter(),
                                         this.next_round_page.start(this.options.choose_ship))
-                                    : (this.IIO1I.I101l.enter(),
-                                        this.IIO1I.I101l.respawn(
+                                    : (this.IIO1I.I701l.enter(),
+                                        this.IIO1I.I701l.respawn(
                                             (function (e) {
                                                 return function () {
                                                     return (
@@ -36003,7 +36002,7 @@
                         }),
                         (i.prototype.shipSelected = function (t) {
                             return (
-                                this.IIO1I.I101l.sendModeMessage({
+                                this.IIO1I.I701l.sendModeMessage({
                                     name: "ship_selected",
                                     type: 100 * t.level + t.model,
                                 }),
@@ -36272,7 +36271,7 @@
                             )
                                 (l = n[e]), this.teams.push(new Team(this, l, e));
                             return this.options.auto_assign_teams
-                                ? this.IIO1I.I101l.enter({})
+                                ? this.IIO1I.I701l.enter({})
                                 : null != t.mode.restore_ship
                                     ? ((this.restore_ship = t.mode.restore_ship),
                                         (this.team =
@@ -36334,7 +36333,7 @@
                                 return (
                                     (this.recovery_answered = !0),
                                     (t = this.teams.indexOf(this.team)),
-                                    this.IIO1I.I101l.enter({
+                                    this.IIO1I.I701l.enter({
                                         team: t,
                                         restore_ship: !0,
                                     }),
@@ -36422,7 +36421,7 @@
                                             })(this),
                                             2e3
                                         )),
-                                this.IIO1I.I101l.respawn(),
+                                this.IIO1I.I701l.respawn(),
                                 this.IIO1I.display.hideCursor(),
                                 setTimeout(
                                     (function (t) {
@@ -36614,7 +36613,7 @@
                                         2e3
                                     );
                                 } else
-                                    this.IIO1I.I101l.enter({
+                                    this.IIO1I.I701l.enter({
                                         team: e,
                                     });
                                 return (
@@ -36645,11 +36644,11 @@
                                     })(this),
                                     2e3
                                 ),
-                                this.IIO1I.I101l.sendModeMessage({
+                                this.IIO1I.I701l.sendModeMessage({
                                     name: "ship_selected",
                                     type: 100 * t.level + t.model,
                                 }),
-                                this.IIO1I.I101l.enter({
+                                this.IIO1I.I701l.enter({
                                     team: this.teams.indexOf(this.team),
                                 })
                             );
@@ -36812,7 +36811,7 @@
                             );
                         }),
                         (i.prototype.undock = function () {
-                            return this.IIO1I.I101l.sendModeMessage("undock");
+                            return this.IIO1I.I701l.sendModeMessage("undock");
                         }),
                         (i.prototype.showUI = function () {
                             var t;
@@ -36971,8 +36970,8 @@
                         extend(i, e),
                         (i.prototype.IlO0l = function (t) {
                             return (
-                                this.IIO1I.I101l.enter(),
-                                this.IIO1I.I101l.respawn(
+                                this.IIO1I.I701l.enter(),
+                                this.IIO1I.I701l.respawn(
                                     (function (e) {
                                         return function () {
                                             return (
@@ -37128,7 +37127,7 @@
                             (this.members = [
                                 {
                                     id: 1,
-                                    type: 101,
+                                    type: 701,
                                     score: 1e3,
                                 },
                                 {
@@ -37313,7 +37312,7 @@
                                     (l = 0.0025 * this.llI1l),
                                     (E = 0.09 * this.llI1l),
                                     (c = this.l110O - E * this.num_players),
-                                    (U = llI1I.getShipIcon(101)),
+                                    (U = llI1I.getShipIcon(701)),
                                     (N = 0),
                                     null != U && null != this.scoredata)
                             ) {
@@ -37655,13 +37654,13 @@
                                     0.7,
                                 ]),
                                 this.animate(n, 3 + 0.5 * a);
-                        (this.choose = new lO101(t("Choose sides"))),
+                        (this.choose = new lO701(t("Choose sides"))),
                             (this.choose.font = "Play"),
                             (this.choose.color = "#FFF"),
                             (this.choose.background = null),
                             this.add(this.choose, [0.2, 0.05, 0.6, 0.05]),
                             this.animate(this.choose, 5),
-                            (this.systemname = new lO101(
+                            (this.systemname = new lO701(
                                 this.mode.game_info.name + " System"
                             )),
                             (this.systemname.font = "Play"),
@@ -37677,7 +37676,7 @@
                                 day: "numeric",
                                 year: "numeric",
                             })),
-                            (this.gamedate = new lO101(l)),
+                            (this.gamedate = new lO701(l)),
                             (this.gamedate.font = "Play"),
                             (this.gamedate.color = "#FFF"),
                             (this.gamedate.background = null),
@@ -38050,12 +38049,12 @@
                                     this.next_round_page,
                                     [0, 0, 1, 1]
                                 ),
-                                this.IIO1I.I101l.enter()
+                                this.IIO1I.I701l.enter()
                             );
                         }),
                         (i.prototype.entered = function (t) { }),
                         (i.prototype.shipSelected = function (t) {
-                            return this.IIO1I.I101l.sendModeMessage({
+                            return this.IIO1I.I701l.sendModeMessage({
                                 dm_status: "dm_ship_selected",
                                 dm_value: 100 * t.level + t.model,
                             });
@@ -38195,7 +38194,7 @@
                                             gameover: !0,
                                         }),
                                         (this.IIO1I.gameover = !0),
-                                        this.IIO1I.I101l.socket.close()
+                                        this.IIO1I.I701l.socket.close()
                                     );
                                 case "dm_target":
                                     return (
@@ -38241,7 +38240,7 @@
                         (i.prototype.respawn = function () {
                             if ("round" === this.status) {
                                 if (!this.spectate)
-                                    return this.IIO1I.I101l.respawn(
+                                    return this.IIO1I.I701l.respawn(
                                         (function (e) {
                                             return function () {
                                                 if (
@@ -38864,11 +38863,11 @@
                             (this.mode = s),
                             i.IlOlI.constructor.call(this),
                             this.mode.pro
-                                ? ((this.title = new lO101(t("PRO DEATHMATCH"))),
+                                ? ((this.title = new lO701(t("PRO DEATHMATCH"))),
                                     (this.cup = new Cup("")),
                                     this.add(this.cup, [0.4, 0.06, 0.2, 0.2]),
                                     this.animate(this.cup, 1))
-                                : (this.title = new lO101(t("Deathmatch").toUpperCase())),
+                                : (this.title = new lO701(t("Deathmatch").toUpperCase())),
                             (this.title.font = "Play"),
                             (this.title.color = "#FFF"),
                             (this.title.background = null),
@@ -38897,7 +38896,7 @@
                             )),
                                 this.add(this.quit_button, [0, 0.94, 0.2, 0.06]),
                                 this.animate(this.quit_button, 0.75)),
-                            (this.nextround = new lO101(
+                            (this.nextround = new lO701(
                                 t("Choose your ship for this round")
                             )),
                             (this.nextround.font = "Play"),
@@ -38911,7 +38910,7 @@
                             (this.nextround.blending = THREE.NormalBlending),
                             this.add(this.nextround, [0.1, 0.3, 0.8, 0.05]),
                             this.animate(this.nextround, 1),
-                            (this.countdown = new lO101("10")),
+                            (this.countdown = new lO701("10")),
                             (this.countdown.font = "Play"),
                             (this.countdown.color = "#FFF"),
                             (this.countdown.background = null),
@@ -39315,7 +39314,7 @@
                         }),
                         e
                     );
-                })(lO101)),
+                })(lO701)),
                 (extend = function (t, e) {
                     function i() {
                         this.constructor = t;
@@ -39436,7 +39435,7 @@
                                     0.7,
                                 ]),
                                 this.animate(n, 3 + 0.5 * l);
-                        (this.title = new lO101(t("NEXT ROUND"))),
+                        (this.title = new lO701(t("NEXT ROUND"))),
                             (this.title.font = "Play"),
                             (this.title.color = "#FFF"),
                             (this.title.background = null),
@@ -40047,8 +40046,8 @@
                             (this.restricted_weapons_store = !0),
                             (this.I11OO = BATTLE_SHIPS),
                             (this.llOl1 = BATTLE_SHIP_TYPES),
-                            this.I11OO.add(I11OO.ships_by_code[101]),
-                            this.llOl1.add(llOl1.types_by_code[101]),
+                            this.I11OO.add(I11OO.ships_by_code[701]),
+                            this.llOl1.add(llOl1.types_by_code[701]),
                             (this.l0l0I = 36e3),
                             (this.l00Il = 1.3),
                             (this.l0Ill = 0.003),
@@ -40081,13 +40080,13 @@
                                     this.next_round_page,
                                     [0, 0, 1, 1]
                                 ),
-                                this.IIO1I.I101l.enter()
+                                this.IIO1I.I701l.enter()
                             );
                         }),
                         (i.prototype.entered = function (t) { }),
                         (i.prototype.shipSelected = function (t) {
                             return (
-                                this.IIO1I.I101l.sendModeMessage({
+                                this.IIO1I.I701l.sendModeMessage({
                                     br_status: "br_ship_selected",
                                     br_value: 100 * t.level + t.model,
                                 }),
@@ -40122,7 +40121,7 @@
                         (i.prototype.updateScore = function (t) {
                             if (null != this.scoreboard)
                                 return (
-                                    (this.scoreboard.survivors = this.IIO1I.I101l.alive_ships),
+                                    (this.scoreboard.survivors = this.IIO1I.I701l.alive_ships),
                                     this.scoreboard.updateScore(t)
                                 );
                         }),
@@ -40241,7 +40240,7 @@
                             );
                         }),
                         (i.prototype.respawn = function () {
-                            return this.IIO1I.I101l.respawn(
+                            return this.IIO1I.I701l.respawn(
                                 (function (e) {
                                     return function () {
                                         if (
@@ -40415,7 +40414,7 @@
                             }
                             if (
                                 ("playing" === this.status &&
-                                    1 === this.IIO1I.I101l.alive_ships &&
+                                    1 === this.IIO1I.I701l.alive_ships &&
                                     this.IIO1I.OIO00.O11OI.lIl0I > this.OI1I1 + 600 &&
                                     !this.gameover &&
                                     ((this.gameover = !0), this.killed(0, !0, 1)),
@@ -40551,7 +40550,7 @@
                         (this.IIO1I = e),
                             (this.mode = s),
                             i.IlOlI.constructor.call(this),
-                            (this.title = new lO101(t("Battle Royale").toUpperCase())),
+                            (this.title = new lO701(t("Battle Royale").toUpperCase())),
                             (this.title.font = "Play"),
                             (this.title.color = "#FFF"),
                             (this.title.background = null),
@@ -40580,7 +40579,7 @@
                             )),
                                 this.add(this.quit_button, [0, 0.94, 0.2, 0.06]),
                                 this.animate(this.quit_button, 0.75)),
-                            (this.nextround = new lO101(t("Choose your ship"))),
+                            (this.nextround = new lO701(t("Choose your ship"))),
                             (this.nextround.font = "Play"),
                             (this.nextround.color = "#FFF"),
                             (this.nextround.background = null),
@@ -40592,7 +40591,7 @@
                             (this.nextround.blending = THREE.NormalBlending),
                             this.add(this.nextround, [0.1, 0.3, 0.8, 0.05]),
                             this.animate(this.nextround, 1),
-                            (this.countdown = new lO101("")),
+                            (this.countdown = new lO701("")),
                             (this.countdown.font = "Play"),
                             (this.countdown.color = "#FFF"),
                             (this.countdown.background = null),
@@ -41358,8 +41357,8 @@
                         extend(i, e),
                         (i.prototype.IlO0l = function (t) {
                             return (
-                                this.IIO1I.I101l.enter(),
-                                this.IIO1I.I101l.respawn(
+                                this.IIO1I.I701l.enter(),
+                                this.IIO1I.I701l.respawn(
                                     (function (e) {
                                         return function () {
                                             return (
@@ -42395,7 +42394,7 @@
                                     init: (function (t) {
                                         return function () {
                                             return setTimeout(function () {
-                                                return t.IIO1I.I101l.sendModeMessage(
+                                                return t.IIO1I.I701l.sendModeMessage(
                                                     "spawn_asteroid"
                                                 );
                                             }, 1e3);
@@ -42460,12 +42459,12 @@
                                     init: (function (t) {
                                         return function () {
                                             return (
-                                                t.IIO1I.I101l.sendModeMessage("max_ship"),
-                                                t.IIO1I.I101l.sendModeMessage("empty_crystals"),
+                                                t.IIO1I.I701l.sendModeMessage("max_ship"),
+                                                t.IIO1I.I701l.sendModeMessage("empty_crystals"),
                                                 (t.IIO1I.O0O10.status.OlIII = 0),
                                                 setTimeout(function () {
                                                     return (
-                                                        t.IIO1I.I101l.sendModeMessage("spawn_alien"),
+                                                        t.IIO1I.I701l.sendModeMessage("spawn_alien"),
                                                         t.mode.instructor.I01I0.set({
                                                             opacity: 0.25,
                                                         })
@@ -42509,7 +42508,7 @@
                                         return function () {
                                             return (
                                                 t.IIO1I.O0O10.status.OlIII < 20 &&
-                                                t.IIO1I.I101l.sendModeMessage("fill_crystals"),
+                                                t.IIO1I.I701l.sendModeMessage("fill_crystals"),
                                                 t.IIO1I.O0O10.type.level > 1
                                                     ? ((t.mode.ship_can_upgrade = !1), Math.random())
                                                     : 0
@@ -42529,7 +42528,7 @@
                                     init: (function (t) {
                                         return function () {
                                             return (
-                                                t.IIO1I.I101l.sendModeMessage("max_ship"),
+                                                t.IIO1I.I701l.sendModeMessage("max_ship"),
                                                 (t.mode.ship_can_upgrade = !1)
                                             );
                                         };
@@ -42611,7 +42610,7 @@
                                         return function () {
                                             return (
                                                 (t.mode.show_upgrades = !1),
-                                                t.IIO1I.I101l.sendModeMessage("fill_crystals")
+                                                t.IIO1I.I701l.sendModeMessage("fill_crystals")
                                             );
                                         };
                                     })(this),
@@ -42649,7 +42648,7 @@
                                 this.add({
                                     init: (function (t) {
                                         return function () {
-                                            return t.IIO1I.I101l.sendModeMessage("fill_credits");
+                                            return t.IIO1I.I701l.sendModeMessage("fill_credits");
                                         };
                                     })(this),
                                     text: t(
@@ -42703,7 +42702,7 @@
                                     touch: {
                                         init: (function (t) {
                                             return function () {
-                                                return t.IIO1I.I101l.sendModeMessage(
+                                                return t.IIO1I.I701l.sendModeMessage(
                                                     "fix_secondaries"
                                                 );
                                             };
@@ -42740,7 +42739,7 @@
                                     mouse: {
                                         init: (function (t) {
                                             return function () {
-                                                return t.IIO1I.I101l.sendModeMessage(
+                                                return t.IIO1I.I701l.sendModeMessage(
                                                     "fix_secondaries"
                                                 );
                                             };
@@ -42779,7 +42778,7 @@
                                     gamepad: {
                                         init: (function (t) {
                                             return function () {
-                                                return t.IIO1I.I101l.sendModeMessage(
+                                                return t.IIO1I.I701l.sendModeMessage(
                                                     "fix_secondaries"
                                                 );
                                             };
@@ -42978,7 +42977,7 @@
                                             return setTimeout(function () {
                                                 return (
                                                     (t.mode.show_upgrades = !0),
-                                                    t.IIO1I.I101l.sendModeMessage("end_sequence"),
+                                                    t.IIO1I.I701l.sendModeMessage("end_sequence"),
                                                     (t.mode.end_sequence_start = Date.now())
                                                 );
                                             }, 5e3);
@@ -43314,10 +43313,10 @@
                                             this.next_round_page,
                                             [0, 0, 1, 1]
                                         ),
-                                        this.IIO1I.I101l.enter(),
+                                        this.IIO1I.I701l.enter(),
                                         this.next_round_page.start(this.options.choose_ship))
-                                    : (this.IIO1I.I101l.enter(),
-                                        this.IIO1I.I101l.respawn(
+                                    : (this.IIO1I.I701l.enter(),
+                                        this.IIO1I.I701l.respawn(
                                             (function (e) {
                                                 return function () {
                                                     if ((e.IIO1I.startGame(t), null == e.scoreboard))
@@ -43338,7 +43337,7 @@
                         }),
                         (e.prototype.shipSelected = function (t) {
                             return (
-                                this.IIO1I.I101l.sendModeMessage({
+                                this.IIO1I.I701l.sendModeMessage({
                                     name: "ship_selected",
                                     type: 100 * t.level + t.model,
                                 }),
@@ -43839,7 +43838,7 @@
                                     this.I01I0.push({
                                         d: 0.5,
                                     }),
-                                    this.IIO1I.I101l.sendModeMessage({
+                                    this.IIO1I.I701l.sendModeMessage({
                                         name: "ui_component_clicked",
                                         id: this.component.id,
                                     }),
@@ -43857,7 +43856,7 @@
                                     this.I01I0.push({
                                         d: 0.5,
                                     }),
-                                    this.IIO1I.I101l.sendModeMessage({
+                                    this.IIO1I.I701l.sendModeMessage({
                                         name: "ui_component_clicked",
                                         id: this.component.id,
                                     })
@@ -44017,7 +44016,7 @@
                             )),
                                 this.add(this.quit_button, [0, 0.94, 0.2, 0.06]),
                                 this.animate(this.quit_button, 0.75)),
-                            (this.nextround = new lO101(t("Choose your ship"))),
+                            (this.nextround = new lO701(t("Choose your ship"))),
                             (this.nextround.font = "Play"),
                             (this.nextround.color = "#FFF"),
                             (this.nextround.background = null),
@@ -44773,19 +44772,19 @@
                                 null == e
                                     ? ((null == this.requests[t] ||
                                         Date.now() > this.requests[t] + 2e3) &&
-                                        (this.IIO1I.I101l.O01lO(t),
+                                        (this.IIO1I.I701l.O01lO(t),
                                             (this.requests[t] = Date.now())),
                                         "")
                                     : e
                             );
                         }),
                         (t.prototype.getCustom = function (t) {
-                            return null == this.IIO1I.I101l
+                            return null == this.IIO1I.I701l
                                 ? null
                                 : (this.get(t), this.custom[t]);
                         }),
                         (t.prototype.getData = function (t) {
-                            return null == this.IIO1I.I101l
+                            return null == this.IIO1I.I701l
                                 ? null
                                 : (this.get(t), this.data[t]);
                         }),
@@ -45038,7 +45037,7 @@
                                 this.ships.push(n),
                                 (this.llO01[a.id] = n),
                                 this.Ol1ll(n),
-                                this.IIO1I.I101l.O01lO(a.id)
+                                this.IIO1I.I701l.O01lO(a.id)
                             );
                         }),
                         (t.prototype.addStation = function (t) {
@@ -46411,7 +46410,7 @@
                                 case 100:
                                     this.laser(It);
                                     break;
-                                case 101:
+                                case 701:
                                     (g = It.getUint16(2, !0)),
                                         (ut = It.getFloat32(4, !0)),
                                         (dt = It.getFloat32(8, !0)),
@@ -47109,7 +47108,7 @@
                         (t.prototype.exec = function (t) {
                             return t();
                         }),
-                        (t.prototype.l1101 = function () {
+                        (t.prototype.l1701 = function () {
                             return 100 - (this.l00IO.length / this.l0O11) * 100;
                         }),
                         (t.prototype.pause = function () {
@@ -49710,7 +49709,7 @@
                                                     .querySelector(".shippreview")
                                                     .appendChild(
                                                         llI1I.exportThumbnail(
-                                                            101,
+                                                            701,
                                                             localStorage.getItem("shipColor"),
                                                             t.IIO1I.llI0l.custom.finish,
                                                             t.IIO1I.llI0l.custom.laser,
@@ -52063,7 +52062,7 @@
                                 (a = document.querySelector("#refresh_btn")),
                                 (n = document.querySelector(".gameloader")),
                                 (I = document.getElementById("serverip")),
-                                (I.innerText = "(" + this.IIO1I.I101l.address + ")"),
+                                (I.innerText = "(" + this.IIO1I.I701l.address + ")"),
                                 (I.style.fontSize = ".4em"),
                                 this.overlay.classList.remove("hide"),
                                 (this.overlay.style.display = "block"),
@@ -53434,7 +53433,7 @@
                         var t, e, i;
                         for (
                             this.I0llI = [
-                                -1011393833, -976314432, 839460795, -421701588, 1314828729,
+                                -7011393833, -976314432, 839460795, -421701588, 1314828729,
                                 -394527967, -329686549, 401033611, -398659356, 1980082871,
                                 546305162, 1623261005, 892242836, 881268343, 546305156,
                                 63201784, 1507945471, 2096522726, 774615138, -643097469,
@@ -54604,7 +54603,7 @@
                             length: [0, 12, 12, 22, 4, 38],
                             width: [165, 235, 246, 232, 167, 122, 35],
                             angle: [-15, -15, -15, -8, -8, -8],
-                            position: [20, 54, 54, 47, 79, 100, 101],
+                            position: [20, 54, 54, 47, 79, 100, 701],
                             texture: [4, 3, 4, 4, 1, 8],
                             doubleside: !0,
                             bump: {
@@ -60671,7 +60670,7 @@
                                     (this.player_name = ""),
                                     (this.names = new Names(this)),
                                     (this.weapons = new Weapons(this)),
-                                    (this.O0O10 = new lllI0(this, llOl1.types_by_code[101])),
+                                    (this.O0O10 = new lllI0(this, llOl1.types_by_code[701])),
                                     (this.OIO00 = new Scene(this, t.seed, this.O0lll, !0)),
                                     this.O0lll.add(
                                         (function (e) {
@@ -60743,7 +60742,7 @@
                             return this.lOIO0.O1l1l();
                         }),
                         (e.prototype.OI11O = function () {
-                            return this.OOOl1.IOl0O(this.O0lll.l1101());
+                            return this.OOOl1.IOl0O(this.O0lll.l1701());
                         }),
                         (e.prototype.startPrivateGame = function (e, i, s, n) {
                             var l;
@@ -60776,7 +60775,7 @@
                                             return (
                                                 e.OOOl1.gameLoader(5, t("Connected")),
                                                 (e.O0O10 = new lllI0(e)),
-                                                (e.I101l = new OlI0O(
+                                                (e.I701l = new OlI0O(
                                                     e,
                                                     n.ip + ":" + n.port,
                                                     e.bonus,
@@ -60853,7 +60852,7 @@
                                                 (e.region = s),
                                                 e.OOOl1.gameLoader(5, t("Connected")),
                                                 (e.O0O10 = new lllI0(e)),
-                                                (e.I101l = new OlI0O(e, i, e.bonus, e.hue, n)),
+                                                (e.I701l = new OlI0O(e, i, e.bonus, e.hue, n)),
                                                 e.lOIO0.O0lll.resume()
                                             );
                                         }));
@@ -60867,10 +60866,10 @@
                             return null != this.private_address
                                 ? this.cannotJoin()
                                 : ((e = {}),
-                                    null != this.I101l &&
+                                    null != this.I701l &&
                                     null != this.l1001 &&
-                                    ((this.l1001.I0llI[this.I101l.address] =
-                                        this.I101l.address),
+                                    ((this.l1001.I0llI[this.I701l.address] =
+                                        this.I701l.address),
                                         (e = this.l1001.I0llI)),
                                     (this.preferred = null),
                                     this.refused_count++ > 4
@@ -60885,7 +60884,7 @@
                                                                 (i.region = s),
                                                                 i.OOOl1.gameLoader(5, t("Connected")),
                                                                 (i.O0O10 = new lllI0(i)),
-                                                                (i.I101l = new OlI0O(
+                                                                (i.I701l = new OlI0O(
                                                                     i,
                                                                     e,
                                                                     i.bonus,
@@ -60923,7 +60922,7 @@
                                                     t.OOOl1.killed(i),
                                                     e)
                                             )
-                                                return (t.gameover = !0), t.I101l.socket.close();
+                                                return (t.gameover = !0), t.I701l.socket.close();
                                         };
                                     })(this),
                                     this.mode.respawn_delay
@@ -60946,7 +60945,7 @@
                                 (i = (function (t) {
                                     return function () {
                                         return t.OOOl1.gameLoader(
-                                            Math.round(10 + (90 * s.l1101()) / 100),
+                                            Math.round(10 + (90 * s.l1701()) / 100),
                                             l
                                         );
                                     };
@@ -61020,7 +61019,7 @@
                         }),
                         (e.prototype.pushType = function () {
                             return (
-                                this.I101l.pushType(this.O0O10.type),
+                                this.I701l.pushType(this.O0O10.type),
                                 this.O0O10.instance.buildLasers(),
                                 this.O0O10.instance.updateParameters()
                             );
@@ -61161,7 +61160,7 @@
                         null == t && (t = null),
                         null == e && (e = {}),
                         (s = ""),
-                        null == t && (t = llOl1.types_by_code[101]),
+                        null == t && (t = llOl1.types_by_code[701]),
                         null != e[t.code]
                             ? s
                             : ((e[t.code] = t),
